@@ -1,0 +1,17 @@
+{
+  "violin": [2, 2],
+  "viola": [2, 3],
+  "cello": [3, 3],
+  "doublebass": [4, 4],
+  "piccolo": [2, 2],
+  "flute": [2, 2],
+  "oboe": [2, 2],
+  "clarinet": [3, 2],
+  "bassoon": [3, 2],
+  "contrabassoon": [3, 3],
+  "horn": [2, 2],
+  "trumpet": [2, 3],
+  "trombone": [3, 3],
+  "timpani": [3, 3],
+  "director": [3, 3]
+}

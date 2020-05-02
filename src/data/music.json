@@ -1,0 +1,21 @@
+{
+  "beethoven_symphony_5_1": {
+    "title": "5th Symphony - 1st Movement",
+    "composer": "Ludwig van Beethoven",
+    "ensemble": "orchestra",
+    "tracks": {
+      "1": "flute",
+      "2": "oboe",
+      "3": "clarinet",
+      "4": "bassoon",
+      "5": "horn",
+      "6": "trumpet",
+      "7": "timpani",
+      "8": "violin_1",
+      "9": "violin_2",
+      "10": "viola",
+      "11": "cello",
+      "12": "doublebass"
+    }
+  }
+}

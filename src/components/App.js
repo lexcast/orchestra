@@ -49,7 +49,7 @@ const App = () => {
 
   return (
     <div className="bg-yellow-100 font-cursive text-center h-screen w-screen flex items-center justify-center flex-col">
-      <Ensemble playing={playing} />
+      <Ensemble {...{ playing, song }} />
       {player !== "LOADING" && (
         <Player {...{ player, setPlayer, setPlaying, audio }} />
       )}

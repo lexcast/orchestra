@@ -4,7 +4,9 @@ import ensembles from "data/ensembles";
 
 const image = (key) => `/images/instruments/${key}.png`;
 
-const Ensemble = ({ playing }) => {
+const Ensemble = ({ song, playing }) => {
+  const ensemble = ensembles[song.ensemble];
+
   return (
     <div
       className="md:p-10 lg:p-20 lg:-mt-10"
@@ -16,32 +18,40 @@ const Ensemble = ({ playing }) => {
         height: "56vw",
       }}
     >
-      {Object.keys(ensembles.orchestra).map((i) => {
-        const section = ensembles.orchestra[i];
+      {Object.entries(song.tracks).map(([, track]) => {
+        const [i, p] = track.split("|");
+        const section = ensemble[i];
         const name = section.instrument || i;
         const instrument = instruments[name];
+        const pos = p ? p.split(",") : false;
 
-        return section.positions.map((p, j) => (
-          <div
-            key={j}
-            className="flex items-center justify-center"
-            style={{
-              gridArea: `${p[0]} / ${p[1]} / ${p[0] + instrument[0]} / ${
-                p[1] + instrument[1]
-              }`,
-            }}
-          >
-            <img
+        return section.positions.map((p, j) => {
+          if (pos && !pos.includes(j.toString())) {
+            return null;
+          }
+
+          return (
+            <div
+              key={j}
+              className="flex items-center justify-center"
               style={{
-                transition: "transform .1s ease",
-                transform: playing[i] ? "scale(1.2)" : "scale(1)",
+                gridArea: `${p[0]} / ${p[1]} / ${p[0] + instrument[0]} / ${
+                  p[1] + instrument[1]
+                }`,
               }}
-              alt={name}
-              className="max-w-full max-h-full"
-              src={image(name)}
-            />
-          </div>
-        ));
+            >
+              <img
+                style={{
+                  transition: "transform .1s ease",
+                  transform: playing[track] ? "scale(1.2)" : "scale(1)",
+                }}
+                alt={name}
+                className="max-w-full max-h-full"
+                src={image(name)}
+              />
+            </div>
+          );
+        });
       })}
     </div>
   );

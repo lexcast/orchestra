@@ -6,7 +6,7 @@ const Player = ({ player, audio, setPlayer, setPlaying }) => {
       {player !== "PLAYING" && (
         <button
           title="Play"
-          className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-yellow-700"
+          className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-gray-600"
           onClick={() => {
             if (player === "STOPED") {
               window.MIDI.Player.start();
@@ -25,7 +25,7 @@ const Player = ({ player, audio, setPlayer, setPlaying }) => {
       )}
       {player === "PLAYING" && (
         <button
-          className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-yellow-700"
+          className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-gray-600"
           onClick={() => {
             window.MIDI.Player.pause();
             audio.current.pause();
@@ -37,7 +37,7 @@ const Player = ({ player, audio, setPlayer, setPlaying }) => {
       )}
       {player !== "STOPED" && (
         <button
-          className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-yellow-700"
+          className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-gray-600"
           onClick={() => {
             window.MIDI.Player.stop();
             audio.current.pause();

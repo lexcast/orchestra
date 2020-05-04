@@ -1,6 +1,6 @@
 import React from "react";
 
-const Player = ({ player, audio, setPlayer, setPlaying }) => {
+const Player = ({ player, audio, setPlayer, setPlaying, delay }) => {
   return (
     <div className="flex items-center justify-center text-lg">
       {player !== "PLAYING" && (
@@ -12,7 +12,7 @@ const Player = ({ player, audio, setPlayer, setPlaying }) => {
               window.MIDI.Player.start();
               setTimeout(() => {
                 audio.current.play();
-              }, 1100);
+              }, delay);
             } else {
               window.MIDI.Player.start();
               audio.current.play();

@@ -51,7 +51,9 @@ const App = () => {
     <div className="bg-yellow-100 font-cursive text-center h-screen w-screen flex items-center justify-center flex-col">
       <Ensemble {...{ playing, song }} />
       {player !== "LOADING" && (
-        <Player {...{ player, setPlayer, setPlaying, audio }} />
+        <Player
+          {...{ player, setPlayer, setPlaying, audio, delay: song.delay }}
+        />
       )}
       <Details song={song} />
     </div>

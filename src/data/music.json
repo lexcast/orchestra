@@ -1,4 +1,29 @@
 {
+  "beethoven_symphony_1_1": {
+    "title": "Symphony No.1 1st Movement",
+    "number": "Opus 21",
+    "key": "C major",
+    "composer": "beethoven",
+    "year": "1800",
+    "city": "Vienna",
+    "delay": 5800,
+    "ensemble": "orchestra",
+    "tracks": {
+      "1": "flute",
+      "2": "oboe",
+      "3": "clarinet",
+      "4": "bassoon",
+      "5": "horn|0",
+      "6": "horn|1",
+      "7": "trumpet",
+      "8": "timpani|0,1",
+      "9": "violin_1",
+      "10": "violin_2",
+      "11": "viola",
+      "12": "cello",
+      "13": "doublebass"
+    }
+  },
   "beethoven_symphony_5_1": {
     "title": "Symphony No.5 1st Movement",
     "number": "Opus 67",
@@ -6,6 +31,7 @@
     "composer": "beethoven",
     "year": "1808",
     "city": "Vienna",
+    "delay": 1100,
     "ensemble": "orchestra",
     "tracks": {
       "1": "flute",

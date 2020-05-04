@@ -2,7 +2,7 @@ import React from "react";
 import instruments from "data/instruments";
 import ensembles from "data/ensembles";
 
-const image = (key) => `/images/${key}.png`;
+const image = (key) => `/images/instruments/${key}.png`;
 
 const Ensemble = ({ playing }) => {
   return (

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import music from "data/music";
 import Player from "./Player";
 import Ensemble from "./Ensemble";
+import Details from "./Details";
 
 const midi = (key) => `/midi/${key}.mid`;
 const mp3 = (key) => `/mp3/${key}.mp3`;
@@ -52,6 +53,7 @@ const App = () => {
       {player !== "LOADING" && (
         <Player {...{ player, setPlayer, setPlaying, audio }} />
       )}
+      <Details song={song} />
     </div>
   );
 };

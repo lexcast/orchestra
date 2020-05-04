@@ -1,7 +1,11 @@
 {
   "beethoven_symphony_5_1": {
-    "title": "5th Symphony - 1st Movement",
-    "composer": "Ludwig van Beethoven",
+    "title": "Symphony No.5 1st Movement",
+    "number": "Opus 67",
+    "key": "C minor",
+    "composer": "beethoven",
+    "year": "1808",
+    "city": "Vienna",
     "ensemble": "orchestra",
     "tracks": {
       "1": "flute",
@@ -10,7 +14,7 @@
       "4": "bassoon",
       "5": "horn",
       "6": "trumpet",
-      "7": "timpani",
+      "7": "timpani|1",
       "8": "violin_1",
       "9": "violin_2",
       "10": "viola",

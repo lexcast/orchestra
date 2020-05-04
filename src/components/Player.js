@@ -1,32 +1,53 @@
 import React from "react";
 
-const Player = ({ canPlay, audio }) => {
+const Player = ({ player, audio, setPlayer, setPlaying }) => {
   return (
-    <div className="bg-yellow-100 font-sans text-center h-screen w-screen flex items-center justify-center">
-      {canPlay && (
-        <>
-          <button
-            className="focus:outline-none appearance-none p-3 bg-yellow-700 text-white font-bold"
-            onClick={() => {
+    <div className="flex items-center justify-center text-lg">
+      {player !== "PLAYING" && (
+        <button
+          title="Play"
+          className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-yellow-700"
+          onClick={() => {
+            if (player === "STOPED") {
               window.MIDI.Player.start();
               setTimeout(() => {
                 audio.current.play();
               }, 1100);
-            }}
-          >
-            Play
-          </button>
-          <button
-            className="focus:outline-none appearance-none p-3 bg-yellow-700 text-white font-bold"
-            onClick={() => {
-              window.MIDI.Player.stop();
-              audio.current.pause();
-              audio.current.currentTime = 0;
-            }}
-          >
-            Stop
-          </button>
-        </>
+            } else {
+              window.MIDI.Player.start();
+              audio.current.play();
+            }
+            setPlayer("PLAYING");
+          }}
+        >
+          Play
+        </button>
+      )}
+      {player === "PLAYING" && (
+        <button
+          className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-yellow-700"
+          onClick={() => {
+            window.MIDI.Player.pause();
+            audio.current.pause();
+            setPlayer("PAUSED");
+          }}
+        >
+          Pause
+        </button>
+      )}
+      {player !== "STOPED" && (
+        <button
+          className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-yellow-700"
+          onClick={() => {
+            window.MIDI.Player.stop();
+            audio.current.pause();
+            audio.current.currentTime = 0;
+            setPlaying({});
+            setPlayer("STOPED");
+          }}
+        >
+          Stop
+        </button>
       )}
     </div>
   );

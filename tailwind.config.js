@@ -1,5 +1,11 @@
 module.exports = {
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        cursive: ["Sacramento", "cursive"],
+      },
+    },
+  },
   variants: {},
-  plugins: []
+  plugins: [],
 };

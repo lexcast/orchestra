@@ -7,12 +7,13 @@ const image = (key) => `/images/${key}.png`;
 const Ensemble = ({ playing }) => {
   return (
     <div
+      className="md:p-10 lg:p-20 lg:-mt-10"
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(50, 1fr)",
-        gridTemplateRows: "repeat(50, 1fr)",
-        width: "600px",
-        height: "600px",
+        gridTemplateRows: "repeat(35, 1fr)",
+        width: "80vw",
+        height: "56vw",
       }}
     >
       {Object.keys(ensembles.orchestra).map((i) => {

@@ -10,8 +10,8 @@ const songId = Object.keys(music)[0];
 const song = music[songId];
 
 const App = () => {
-  const [loaded, setLoaded] = useState(false);
   const [playing, setPlaying] = useState({});
+  const [player, setPlayer] = useState("LOADING");
   const audio = useRef();
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const App = () => {
         }
         const player = window.MIDI.Player;
         player.timeWarp = 1;
-        player.loadFile(midi(songId), () => setLoaded(true));
+        player.loadFile(midi(songId), () => setPlayer("STOPED"));
 
         player.addListener((data) => {
           if (data.message === 144) {
@@ -47,9 +47,11 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-yellow-100 font-sans text-center h-screen w-screen flex items-center justify-center flex-col">
+    <div className="bg-yellow-100 font-cursive text-center h-screen w-screen flex items-center justify-center flex-col">
       <Ensemble playing={playing} />
-      <Player canPlay={loaded} audio={audio} />
+      {player !== "LOADING" && (
+        <Player {...{ player, setPlayer, setPlaying, audio }} />
+      )}
     </div>
   );
 };

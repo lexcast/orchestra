@@ -4,6 +4,7 @@ import Player from "./Player";
 import Ensemble from "./Ensemble";
 import Details from "./Details";
 import List from "./List";
+import Progress from "./Progress";
 // import { start, check } from "utils/stopwatch";
 
 const midi = (key) => `/midi/${key}.mid`;
@@ -79,15 +80,18 @@ const App = () => {
     <div className="bg-yellow-100 font-cursive text-center h-screen w-screen flex items-center justify-center flex-col">
       <Ensemble {...{ playing, song: music[song] }} />
       {player !== "LOADING" && (
-        <Player
-          {...{
-            player,
-            setPlayer,
-            setPlaying,
-            audio,
-            delay: music[song].delay,
-          }}
-        />
+        <>
+          <Progress {...{ audio, song, player }} />
+          <Player
+            {...{
+              player,
+              setPlayer,
+              setPlaying,
+              audio,
+              delay: music[song].delay,
+            }}
+          />
+        </>
       )}
       <Details song={music[song]} />
       <List

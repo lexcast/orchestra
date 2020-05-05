@@ -131,7 +131,8 @@
       ]
     },
     "tuba": { "positions": [[10, 46]] },
-    "harp": { "positions": [[12, 11]] },
+    "harp": { "positions": [[12, 8]] },
+    "piano": { "positions": [[12, 4]] },
     "glockenspiel": { "positions": [[7, 17]] },
     "timpani": {
       "positions": [

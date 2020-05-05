@@ -85,7 +85,7 @@
     "composer": "williams",
     "year": "1980",
     "city": "Boston",
-    "delay": 2400,
+    "delay": 2600,
     "ensemble": "orchestra",
     "tracks": {
       "piccolo": 1,
@@ -99,7 +99,7 @@
       "timpani|0": 9,
       "glockenspiel": 10,
       "harp": 11,
-      "timpani|1": 12,
+      "piano": 12,
       "violin_1": 13,
       "violin_2": 14,
       "viola": 15,

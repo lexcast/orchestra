@@ -10,7 +10,9 @@ import Progress from "./Progress";
 const midi = (key) => `/midi/${key}.mid`;
 const mp3 = (key) => `/mp3/${key}.mp3`;
 
-const DEFAULT_SONG = "beethoven_symphony_1_2";
+const keys = Object.keys(music);
+const DEFAULT_SONG = keys[(keys.length * Math.random()) << 0];
+// const DEFAULT_SONG = "beethoven_symphony_5_1";
 
 const App = () => {
   const [playing, setPlaying] = useState({});

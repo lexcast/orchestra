@@ -44,18 +44,23 @@ const App = () => {
       }
     });
 
+    const byNote = music[songId].trackNotes;
     window.MIDI.Player.addListener((data) => {
       if (data.message === 144) {
         // console.log(check());
         setPlaying((playing) => ({
           ...playing,
-          [data.track]: true,
+          [byNote.includes(data.track)
+            ? parseFloat(data.track + "." + data.note)
+            : data.track]: true,
           d: true,
         }));
       } else {
         setPlaying((playing) => ({
           ...playing,
-          [data.track]: false,
+          [byNote.includes(data.track)
+            ? parseFloat(data.track + "." + data.note)
+            : data.track]: false,
           d: false,
         }));
       }

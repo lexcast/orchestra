@@ -6,7 +6,7 @@
     "composer": "beethoven",
     "year": "1800",
     "city": "Vienna",
-    "delay": 5700,
+    "delay": 5800,
     "ensemble": "orchestra",
     "tracks": {
       "flute": 1,
@@ -16,14 +16,16 @@
       "horn|0": 5,
       "horn|1": 6,
       "trumpet": 7,
-      "timpani|0,1": 8,
+      "timpani|0": 8.43,
+      "timpani|1": 8.48,
       "violin_1": 9,
       "violin_2": 10,
       "viola": 11,
       "cello": 12,
       "doublebass": 13,
       "director": "d"
-    }
+    },
+    "trackNotes": [8]
   },
   "beethoven_symphony_1_2": {
     "title": "Symphony No.1 2nd Movement",
@@ -32,7 +34,7 @@
     "composer": "beethoven",
     "year": "1800",
     "city": "Vienna",
-    "delay": 1100,
+    "delay": 1200,
     "ensemble": "orchestra",
     "tracks": {
       "flute": 1,
@@ -42,14 +44,16 @@
       "horn|0": 5,
       "horn|1": 6,
       "trumpet": 7,
-      "timpani|0,1": 8,
+      "timpani|0": 8.43,
+      "timpani|1": 8.48,
       "violin_1": 9,
       "violin_2": 10,
       "viola": 11,
       "cello": 12,
       "doublebass": 13,
       "director": "d"
-    }
+    },
+    "trackNotes": [8]
   },
   "beethoven_symphony_5_1": {
     "title": "Symphony No.5 1st Movement",
@@ -58,7 +62,7 @@
     "composer": "beethoven",
     "year": "1808",
     "city": "Vienna",
-    "delay": 1050,
+    "delay": 1150,
     "ensemble": "orchestra",
     "tracks": {
       "flute": 1,
@@ -104,7 +108,8 @@
       "violin_2": 14,
       "viola": 15,
       "cello": 16,
-      "doublebass": 16
+      "doublebass": 16,
+      "director": "d"
     }
   }
 }

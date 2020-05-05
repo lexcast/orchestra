@@ -18,8 +18,8 @@ const Ensemble = ({ song, playing }) => {
         height: "56vw",
       }}
     >
-      {Object.entries(song.tracks).map(([, track]) => {
-        const [i, p] = track.split("|");
+      {Object.entries(song.tracks).map(([inst, track]) => {
+        const [i, p] = inst.split("|");
         const section = ensemble[i];
         const name = section.instrument || i;
         const instrument = instruments[name];

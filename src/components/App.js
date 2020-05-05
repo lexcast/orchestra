@@ -40,18 +40,17 @@ const App = () => {
     });
 
     window.MIDI.Player.addListener((data) => {
-      const tracks = music[songId].tracks;
       if (data.message === 144) {
         setPlaying((playing) => ({
           ...playing,
-          [tracks[data.track]]: true,
-          director: true,
+          [data.track]: true,
+          d: true,
         }));
       } else {
         setPlaying((playing) => ({
           ...playing,
-          [tracks[data.track]]: false,
-          director: false,
+          [data.track]: false,
+          d: false,
         }));
       }
     });

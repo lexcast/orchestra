@@ -77,5 +77,34 @@
       "contrabassoon": "ex",
       "piccolo": "ex"
     }
+  },
+  "williams_starwars_imperial_march": {
+    "title": "The Imperial March",
+    "number": "Star Wars V",
+    "key": "G minor",
+    "composer": "williams",
+    "year": "1980",
+    "city": "Boston",
+    "delay": 2400,
+    "ensemble": "orchestra",
+    "tracks": {
+      "piccolo": 1,
+      "oboe": 2,
+      "clarinet": 3,
+      "bassoon": 4,
+      "horn|0,1": 5,
+      "trumpet": 6,
+      "trombone": 7,
+      "tuba": 8,
+      "timpani|0": 9,
+      "glockenspiel": 10,
+      "harp": 11,
+      "timpani|1": 12,
+      "violin_1": 13,
+      "violin_2": 14,
+      "viola": 15,
+      "cello": 16,
+      "doublebass": 16
+    }
   }
 }

@@ -15,7 +15,7 @@ const Details = ({ song }) => {
       <p className="text-sm">
         {song.city}, {song.year}
       </p>
-      <div className="w-10 h-10 m-auto">
+      <div className="w-10 h-10 m-auto flex items-center">
         <img
           alt={composer.name}
           src={image(song.composer)}

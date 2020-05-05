@@ -3,5 +3,10 @@
     "name": "Ludwig van Beethoven",
     "city": "Bonn",
     "year": "1770"
+  },
+  "williams": {
+    "name": "John Williams",
+    "city": "Floral Park",
+    "year": "1932"
   }
 }

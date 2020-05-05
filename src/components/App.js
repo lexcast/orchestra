@@ -4,6 +4,7 @@ import Player from "./Player";
 import Ensemble from "./Ensemble";
 import Details from "./Details";
 import List from "./List";
+// import { start, check } from "utils/stopwatch";
 
 const midi = (key) => `/midi/${key}.mid`;
 const mp3 = (key) => `/mp3/${key}.mp3`;
@@ -28,6 +29,7 @@ const App = () => {
     audio.current = new Audio(mp3(songId));
 
     window.MIDI.Player.loadFile(midi(songId), () => {
+      // start();
       if (autoplay) {
         window.MIDI.Player.start();
         setTimeout(() => {
@@ -41,6 +43,7 @@ const App = () => {
 
     window.MIDI.Player.addListener((data) => {
       if (data.message === 144) {
+        // console.log(check());
         setPlaying((playing) => ({
           ...playing,
           [data.track]: true,
@@ -57,7 +60,6 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    console.log("INIT");
     window.MIDI.Player.BPM = null;
 
     window.MIDI.loadPlugin({

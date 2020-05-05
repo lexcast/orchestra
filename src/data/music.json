@@ -6,7 +6,7 @@
     "composer": "beethoven",
     "year": "1800",
     "city": "Vienna",
-    "delay": 5800,
+    "delay": 5700,
     "ensemble": "orchestra",
     "tracks": {
       "flute": 1,
@@ -32,7 +32,7 @@
     "composer": "beethoven",
     "year": "1800",
     "city": "Vienna",
-    "delay": 1200,
+    "delay": 1100,
     "ensemble": "orchestra",
     "tracks": {
       "flute": 1,
@@ -58,7 +58,7 @@
     "composer": "beethoven",
     "year": "1808",
     "city": "Vienna",
-    "delay": 1100,
+    "delay": 1050,
     "ensemble": "orchestra",
     "tracks": {
       "flute": 1,

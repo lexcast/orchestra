@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import music from "data/music";
 import Player from "./Player";
 import Ensemble from "./Ensemble";
@@ -16,7 +16,7 @@ const App = () => {
   const [song, setSong] = useState(DEFAULT_SONG);
   const audio = useRef();
 
-  const play = (songId, autoplay) => {
+  const play = useCallback((songId, autoplay) => {
     if (audio.current) {
       window.MIDI.Player.stop();
       audio.current.pause();
@@ -32,7 +32,7 @@ const App = () => {
         window.MIDI.Player.start();
         setTimeout(() => {
           audio.current.play();
-        }, music[song].delay);
+        }, music[songId].delay);
         setPlayer("PLAYING");
       } else {
         setPlayer("STOPED");
@@ -55,9 +55,10 @@ const App = () => {
         }));
       }
     });
-  };
+  }, []);
 
   useEffect(() => {
+    console.log("INIT");
     window.MIDI.Player.BPM = null;
 
     window.MIDI.loadPlugin({
@@ -68,10 +69,10 @@ const App = () => {
         const player = window.MIDI.Player;
         player.timeWarp = 1;
 
-        play(song, false);
+        play(DEFAULT_SONG, false);
       },
     });
-  }, []);
+  }, [play]);
 
   return (
     <div className="bg-yellow-100 font-cursive text-center h-screen w-screen flex items-center justify-center flex-col">

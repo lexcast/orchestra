@@ -4,7 +4,7 @@
 	----------------------------------------------------------
 	https://github.com/mudcube/MIDI.js
 	----------------------------------------------------------
-	Inspired by javax.sound.midi (albeit a super simple version): 
+	Inspired by javax.sound.midi (albeit a super simple version):
 		http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/package-summary.html
 	----------------------------------------------------------
 	Technologies
@@ -145,18 +145,20 @@ MIDI.Player = MIDI.Player || {};
 		};
 		///
 		for (var i = 0; i < length; i ++) {
-			var instrumentId = instruments[i];
-			if (MIDI.Soundfont[instrumentId]) { // already loaded
-				waitForEnd();
-			} else { // needs to be requested
-				sendRequest(instruments[i], audioFormat, function(evt, progress) {
-					var fileProgress = progress / length;
-					var queueProgress = (length - pending) / length;
-					onprogress && onprogress('load', fileProgress + queueProgress, instrumentId);
-				}, function() {
-					waitForEnd();
-				}, onerror);
-			}
+			// DO NOT LOAD SOUNDFONTS
+			waitForEnd();
+			// var instrumentId = instruments[i];
+			// if (MIDI.Soundfont[instrumentId]) { // already loaded
+			// 	waitForEnd();
+			// } else { // needs to be requested
+			// 	sendRequest(instruments[i], audioFormat, function(evt, progress) {
+			// 		var fileProgress = progress / length;
+			// 		var queueProgress = (length - pending) / length;
+			// 		onprogress && onprogress('load', fileProgress + queueProgress, instrumentId);
+			// 	}, function() {
+			// 		waitForEnd();
+			// 	}, onerror);
+			// }
 		};
 	};
 

@@ -62,7 +62,7 @@
     "composer": "beethoven",
     "year": "1808",
     "city": "Vienna",
-    "delay": 1150,
+    "delay": 1050,
     "ensemble": "orchestra",
     "tracks": {
       "flute": 1,

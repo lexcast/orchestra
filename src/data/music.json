@@ -8,6 +8,8 @@
     "city": "Vienna",
     "delay": 5800,
     "ensemble": "orchestra",
+    "midi_author": "Jean-François Lucarelli",
+    "midi_url": "http://www.espace-midi.com/",
     "tracks": {
       "flute": 1,
       "oboe": 2,
@@ -36,6 +38,8 @@
     "city": "Vienna",
     "delay": 1200,
     "ensemble": "orchestra",
+    "midi_author": "Jean-François Lucarelli",
+    "midi_url": "http://www.espace-midi.com/",
     "tracks": {
       "flute": 1,
       "oboe": 2,
@@ -64,6 +68,8 @@
     "city": "Vienna",
     "delay": 1200,
     "ensemble": "orchestra",
+    "midi_author": "Jean-François Lucarelli",
+    "midi_url": "http://www.espace-midi.com/",
     "tracks": {
       "flute": 1,
       "oboe": 2,
@@ -92,6 +98,8 @@
     "city": "Vienna",
     "delay": 3300,
     "ensemble": "orchestra",
+    "midi_author": "Jean-François Lucarelli",
+    "midi_url": "http://www.espace-midi.com/",
     "tracks": {
       "flute": 1,
       "oboe": 2,
@@ -120,6 +128,8 @@
     "city": "Vienna",
     "delay": 1050,
     "ensemble": "orchestra",
+    "midi_author": "Dario Galimberti",
+    "midi_url": "https://www.classicalarchives.com/contributor/589.html",
     "tracks": {
       "flute": 1,
       "oboe": 2,
@@ -170,6 +180,8 @@
       "doublebass": 16,
       "director": "d"
     },
+    "midi_author": "Mark Headrick",
+    "midi_url": "https://www.markheadrick.com/midi.php",
     "trackNotes": {
       "9": {
         "triangle": [81],

@@ -105,7 +105,7 @@ const App = () => {
   }, [play, handleEnd]);
 
   return (
-    <div className="bg-yellow-100 font-cursive text-center h-screen w-screen flex items-center justify-center flex-col">
+    <div className="bg-yellow-100 font-cursive text-center min-h-screen w-screen flex items-center justify-center flex-col">
       <Ensemble {...{ playing, song: music[song] }} />
       {player !== "LOADING" && (
         <>

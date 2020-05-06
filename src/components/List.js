@@ -4,7 +4,7 @@ import music from "data/music";
 
 const List = ({ song, onClick }) => {
   return (
-    <div className="text-left relative md:absolute max-w-xl top-0 left-0 md:m-4 max-w-xl md:w-auto">
+    <div className="mb-6 text-left relative md:absolute max-w-xl top-0 left-0 md:m-4 max-w-xl md:w-auto">
       {Object.entries(music).map(([key, { title, composer }]) => (
         <div
           key={key}

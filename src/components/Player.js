@@ -2,7 +2,7 @@ import React from "react";
 
 const Player = ({ player, audio, setPlayer, setPlaying, delay }) => {
   return (
-    <div className="flex items-center justify-center text-lg">
+    <div className="flex my-4 items-center justify-center text-lg">
       {player !== "PLAYING" && (
         <button
           title="Play"

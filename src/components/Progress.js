@@ -1,19 +1,24 @@
 import React, { useEffect, useState } from "react";
 
-const Progress = ({ song, player, audio }) => {
+const Progress = ({ song, audio }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    if (player === "STOPED") {
-      setProgress(0);
+    const audioCur = audio.current;
+    const update = () => {
+      setProgress((audioCur.currentTime / audioCur.duration) * 100);
+    };
+
+    if (audioCur) {
+      audioCur.addEventListener("timeupdate", update);
     }
 
-    if (audio.current) {
-      audio.current.addEventListener("timeupdate", () => {
-        setProgress((audio.current.currentTime / audio.current.duration) * 100);
-      });
-    }
-  }, [audio, song, player]);
+    return () => {
+      if (audioCur) {
+        audioCur.removeEventListener("timeupdate", update);
+      }
+    };
+  }, [audio, song]);
 
   return (
     <div className="w-64 h-px bg-gray-400">

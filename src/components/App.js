@@ -20,54 +20,65 @@ const App = () => {
   const [song, setSong] = useState(DEFAULT_SONG);
   const audio = useRef();
 
-  const play = useCallback((songId, autoplay) => {
-    if (audio.current) {
-      window.MIDI.Player.stop();
-      audio.current.pause();
-      audio.current.currentTime = 0;
-    }
-    setPlayer("LOADING");
-    setPlaying({});
-    setSong(songId);
-    audio.current = new Audio(mp3(songId));
-
-    window.MIDI.Player.loadFile(midi(songId), () => {
-      // start();
-      if (autoplay) {
-        window.MIDI.Player.start();
-        setTimeout(() => {
-          audio.current.play();
-        }, music[songId].delay);
-        setPlayer("PLAYING");
-      } else {
-        setPlayer("STOPED");
-      }
-    });
-
-    const byNote = music[songId].trackNotes;
-    window.MIDI.Player.addListener((data) => {
-      if (data.message === 144) {
-        // console.log(check());
-        setPlaying((playing) => ({
-          ...playing,
-          [byNote.includes(data.track)
-            ? parseFloat(data.track + "." + data.note)
-            : data.track]: true,
-          d: true,
-        }));
-      } else {
-        setPlaying((playing) => ({
-          ...playing,
-          [byNote.includes(data.track)
-            ? parseFloat(data.track + "." + data.note)
-            : data.track]: false,
-          d: false,
-        }));
-      }
-    });
+  const handleEnd = useCallback(() => {
+    setPlayer("STOPED");
   }, []);
 
+  const play = useCallback(
+    (songId, autoplay) => {
+      window.MIDI.Player.removeListener();
+      window.MIDI.Player.stop();
+      if (audio.current) {
+        audio.current.removeEventListener("ended", handleEnd);
+        audio.current.pause();
+        audio.current.currentTime = 0;
+      }
+      setPlayer("LOADING");
+      setPlaying({});
+      setSong(songId);
+      audio.current = new Audio(mp3(songId));
+      audio.current.addEventListener("ended", handleEnd);
+
+      window.MIDI.Player.loadFile(midi(songId), () => {
+        // start();
+        if (autoplay) {
+          window.MIDI.Player.start();
+          setTimeout(() => {
+            audio.current.play();
+          }, music[songId].delay);
+          setPlayer("PLAYING");
+        } else {
+          setPlayer("STOPED");
+        }
+      });
+
+      const byNote = music[songId].trackNotes;
+      window.MIDI.Player.addListener((data) => {
+        if (data.message === 144) {
+          // console.log(check());
+          setPlaying((playing) => ({
+            ...playing,
+            [byNote && byNote.includes(data.track)
+              ? parseFloat(data.track + "." + data.note)
+              : data.track]: true,
+            d: true,
+          }));
+        } else {
+          setPlaying((playing) => ({
+            ...playing,
+            [byNote && byNote.includes(data.track)
+              ? parseFloat(data.track + "." + data.note)
+              : data.track]: false,
+            d: false,
+          }));
+        }
+      });
+    },
+    [handleEnd]
+  );
+
   useEffect(() => {
+    console.log("INIT");
     window.MIDI.Player.BPM = null;
 
     window.MIDI.loadPlugin({
@@ -81,14 +92,23 @@ const App = () => {
         play(DEFAULT_SONG, false);
       },
     });
-  }, [play]);
+
+    return () => {
+      if (audio.current) {
+        audio.current.removeEventListener("ended", handleEnd);
+        audio.current.pause();
+      }
+      window.MIDI.Player.removeListener();
+      window.MIDI.Player.stop();
+    };
+  }, [play, handleEnd]);
 
   return (
     <div className="bg-yellow-100 font-cursive text-center h-screen w-screen flex items-center justify-center flex-col">
       <Ensemble {...{ playing, song: music[song] }} />
       {player !== "LOADING" && (
         <>
-          <Progress {...{ audio, song, player }} />
+          <Progress {...{ audio, song }} />
           <Player
             {...{
               player,

@@ -80,7 +80,6 @@ const App = () => {
   );
 
   useEffect(() => {
-    console.log("INIT");
     window.MIDI.Player.BPM = null;
 
     window.MIDI.loadPlugin({

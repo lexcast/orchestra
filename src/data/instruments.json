@@ -17,5 +17,9 @@
   "harp": [3, 3],
   "piano": [3, 3],
   "glockenspiel": [3, 3],
+  "cymbals": [2, 2],
+  "drum": [2, 2],
+  "triangle": [2, 2],
+  "bassdrum": [3, 3],
   "director": [3, 3]
 }

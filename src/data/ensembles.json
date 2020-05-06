@@ -133,7 +133,11 @@
     "tuba": { "positions": [[10, 46]] },
     "harp": { "positions": [[12, 8]] },
     "piano": { "positions": [[12, 4]] },
-    "glockenspiel": { "positions": [[7, 17]] },
+    "glockenspiel": { "positions": [[7, 14]] },
+    "triangle": { "positions": [[7, 18]] },
+    "cymbals": { "positions": [[7, 21]] },
+    "drum": { "positions": [[7, 24]] },
+    "bassdrum": { "positions": [[6, 27]] },
     "timpani": {
       "positions": [
         [6, 31],

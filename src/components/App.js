@@ -53,25 +53,27 @@ const App = () => {
       });
 
       const byNote = music[songId].trackNotes;
+      const trackingMap = {};
+      const tracks = [];
+      if (byNote) {
+        Object.entries(byNote).forEach(([track, groups]) => {
+          tracks.push(parseInt(track));
+          Object.entries(groups).forEach(([g, notes]) => {
+            notes.forEach((n) => (trackingMap[`${track}.${n}`] = g));
+          });
+        });
+      }
+
       window.MIDI.Player.addListener((data) => {
-        if (data.message === 144) {
-          // console.log(check());
-          setPlaying((playing) => ({
-            ...playing,
-            [byNote && byNote.includes(data.track)
-              ? parseFloat(data.track + "." + data.note)
-              : data.track]: true,
-            d: true,
-          }));
-        } else {
-          setPlaying((playing) => ({
-            ...playing,
-            [byNote && byNote.includes(data.track)
-              ? parseFloat(data.track + "." + data.note)
-              : data.track]: false,
-            d: false,
-          }));
-        }
+        const on = data.message === 144 ? true : false;
+        // console.log(check());
+        setPlaying((playing) => ({
+          ...playing,
+          [tracks.includes(data.track)
+            ? trackingMap[`${data.track}.${data.note}`]
+            : data.track]: on,
+          d: on,
+        }));
       });
     },
     [handleEnd]

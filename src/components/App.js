@@ -7,8 +7,8 @@ import List from "./List";
 import Progress from "./Progress";
 // import { start, check } from "utils/stopwatch";
 
-const midi = (key) => `/midi/${key}.mid`;
-const mp3 = (key) => `/mp3/${key}.mp3`;
+const midi = (key) => `midi/${key}.mid`;
+const mp3 = (key) => `mp3/${key}.mp3`;
 
 const keys = Object.keys(music);
 const DEFAULT_SONG = keys[(keys.length * Math.random()) << 0];

@@ -145,6 +145,10 @@
         [6, 37],
         [6, 40]
       ]
+    },
+    "piano_solo": {
+      "instrument": "piano",
+      "positions": [[33, 24]]
     }
   }
 }

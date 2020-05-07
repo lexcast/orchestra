@@ -4,6 +4,11 @@
     "city": "Bonn",
     "year": "1770"
   },
+  "chopin": {
+    "name": "Frédéric Chopin",
+    "city": "Żelazowa Wola",
+    "year": "1810"
+  },
   "williams": {
     "name": "John Williams",
     "city": "Floral Park",

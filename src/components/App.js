@@ -52,27 +52,40 @@ const App = () => {
         }
       });
 
-      const byNote = music[songId].trackNotes;
       const trackingMap = {};
-      const tracks = [];
+      const byNote = music[songId].trackNotes;
       if (byNote) {
         Object.entries(byNote).forEach(([track, groups]) => {
-          tracks.push(parseInt(track));
           Object.entries(groups).forEach(([g, notes]) => {
             notes.forEach((n) => (trackingMap[`${track}.${n}`] = g));
           });
+        });
+      }
+      const byGroups = music[songId].groupTracks;
+      if (byGroups) {
+        Object.entries(byGroups).forEach(([channel, list]) => {
+          list.forEach((n) => (trackingMap[n] = channel));
         });
       }
 
       window.MIDI.Player.addListener((data) => {
         const on = data.message === 144 ? true : false;
         // console.log(check());
+        const changes = { [data.track]: on, d: on };
+
+        const trackNote = trackingMap[`${data.track}.${data.note}`];
+        if (trackNote) {
+          changes[trackNote] = on;
+        }
+
+        const trackGroup = trackingMap[data.track];
+        if (trackGroup) {
+          changes[trackGroup] = on;
+        }
+
         setPlaying((playing) => ({
           ...playing,
-          [tracks.includes(data.track)
-            ? trackingMap[`${data.track}.${data.note}`]
-            : data.track]: on,
-          d: on,
+          ...changes,
         }));
       });
     },
@@ -129,7 +142,107 @@ const App = () => {
         }}
       />
       <div className="border-t border-gray-300 p-4 w-full text-center m-1 font-sans text-xs text-gray-600 font-normal">
-        <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/pongsakornred" title="pongsakornRed">pongsakornRed</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+        <div>
+          Icons made by{" "}
+          <a
+            href="https://www.flaticon.com/authors/smashicons"
+            title="Smashicons"
+          >
+            Smashicons
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
+        <div>
+          Icons made by{" "}
+          <a
+            href="https://www.flaticon.com/authors/nikita-golubev"
+            title="Nikita Golubev"
+          >
+            Nikita Golubev
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
+        <div>
+          Icons made by{" "}
+          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+            Freepik
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
+        <div>
+          Icons made by{" "}
+          <a
+            href="https://www.flaticon.com/authors/pongsakornred"
+            title="pongsakornRed"
+          >
+            pongsakornRed
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
+        <div>
+          Icons made by{" "}
+          <a
+            href="https://www.flaticon.com/authors/mynamepong"
+            title="mynamepong"
+          >
+            mynamepong
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
+        <div>
+          Icons made by{" "}
+          <a
+            href="https://www.flaticon.com/authors/photo3idea-studio"
+            title="photo3idea_studio"
+          >
+            photo3idea_studio
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
+        <div>
+          Icons made by{" "}
+          <a
+            href="https://www.flaticon.com/authors/good-ware"
+            title="Good Ware"
+          >
+            Good Ware
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
+        <div>
+          Icons made by{" "}
+          <a
+            href="https://www.flaticon.com/authors/vitaly-gorbachev"
+            title="Vitaly Gorbachev"
+          >
+            Vitaly Gorbachev
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
       </div>
     </div>
   );

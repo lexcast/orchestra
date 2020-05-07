@@ -148,6 +148,45 @@
       "piccolo": "ex"
     }
   },
+  "chopin_grande_polonaise_brillante": {
+    "title": "Andante Spianato et Grande Polonaise Brillante",
+    "number": "Opus 22",
+    "key": "E-flat major",
+    "composer": "chopin",
+    "year": "1836",
+    "city": "Leipzig",
+    "delay": 2200,
+    "ensemble": "orchestra",
+    "midi_author": "Warren Pepperdine",
+    "midi_url": "https://www.classicalarchives.com/contributor/1368.html",
+    "tracks": {
+      "piano_solo": "piano",
+      "violin_1": "violin1",
+      "clarinet|0": 8,
+      "clarinet|1": 9,
+      "violin_2": "violin2",
+      "viola": 12,
+      "cello": 14,
+      "doublebass": 24,
+      "horn|0": 15,
+      "horn|1": 16,
+      "bassoon|0": 17,
+      "bassoon|1": 18,
+      "timpani|0": 19,
+      "timpani|1": 20,
+      "trombone|0": 21,
+      "trombone|1": 31,
+      "flute|0": 22,
+      "flute|1": 23,
+      "oboe": 7,
+      "director": "d"
+    },
+    "groupTracks": {
+      "piano": [1, 2, 3, 4],
+      "violin1": [5, 6, 14],
+      "violin2": [10, 11]
+    }
+  },
   "williams_starwars_imperial_march": {
     "title": "The Imperial March",
     "number": "Star Wars V",

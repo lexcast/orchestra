@@ -2,7 +2,8 @@ import React from "react";
 import instruments from "data/instruments";
 import ensembles from "data/ensembles";
 
-const image = (key) => `images/instruments/${key}.png`;
+const image = (key) =>
+  `${process.env.PUBLIC_URL}/images/instruments/${key}.png`;
 
 const Ensemble = ({ song, playing }) => {
   const ensemble = ensembles[song.ensemble];

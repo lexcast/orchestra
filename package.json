@@ -2,6 +2,7 @@
   "name": "orchestra",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lexcast.github.io/orchestra/",
   "dependencies": {
     "autoprefixer": "^9.7.6",
     "gh-pages": "^2.2.0",

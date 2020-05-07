@@ -1,7 +1,7 @@
 import React from "react";
 import composers from "data/composers";
 
-const image = (key) => `images/composers/${key}.jpg`;
+const image = (key) => `${process.env.PUBLIC_URL}/images/composers/${key}.jpg`;
 
 const Details = ({ song }) => {
   const composer = composers[song.composer];

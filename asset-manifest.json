@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/orchestra/static/css/main.d1d41043.chunk.css",
+    "main.js": "/orchestra/static/js/main.5ebad70b.chunk.js",
+    "main.js.map": "/orchestra/static/js/main.5ebad70b.chunk.js.map",
+    "runtime-main.js": "/orchestra/static/js/runtime-main.c7ec1065.js",
+    "runtime-main.js.map": "/orchestra/static/js/runtime-main.c7ec1065.js.map",
+    "static/js/2.3636c959.chunk.js": "/orchestra/static/js/2.3636c959.chunk.js",
+    "static/js/2.3636c959.chunk.js.map": "/orchestra/static/js/2.3636c959.chunk.js.map",
+    "index.html": "/orchestra/index.html",
+    "precache-manifest.47aba6db02adde24c56e10cc070bb84e.js": "/orchestra/precache-manifest.47aba6db02adde24c56e10cc070bb84e.js",
+    "service-worker.js": "/orchestra/service-worker.js",
+    "static/css/main.d1d41043.chunk.css.map": "/orchestra/static/css/main.d1d41043.chunk.css.map",
+    "static/js/2.3636c959.chunk.js.LICENSE.txt": "/orchestra/static/js/2.3636c959.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7ec1065.js",
+    "static/js/2.3636c959.chunk.js",
+    "static/css/main.d1d41043.chunk.css",
+    "static/js/main.5ebad70b.chunk.js"
+  ]
+}

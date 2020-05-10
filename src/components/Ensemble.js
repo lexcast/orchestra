@@ -43,7 +43,7 @@ const Ensemble = ({ song, playing }) => {
             >
               <img
                 style={{
-                  transition: "transform .1s ease",
+                  transition: "transform .05s ease",
                   transform: playing[track] ? "scale(1.2)" : "scale(1)",
                 }}
                 alt={name}

@@ -160,7 +160,7 @@
     "composer": "chopin",
     "year": "1836",
     "city": "Leipzig",
-    "delay": 2200,
+    "delay": 0,
     "bpm": 86,
     "ensemble": "orchestra",
     "midi_author": "Warren Pepperdine",
@@ -189,7 +189,7 @@
     },
     "groupTracks": {
       "piano": [1, 2, 3, 4],
-      "violin1": [5, 6, 14],
+      "violin1": [5, 6],
       "violin2": [10, 11]
     }
   },

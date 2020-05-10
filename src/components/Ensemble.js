@@ -33,7 +33,7 @@ const Ensemble = ({ song, playing }) => {
 
           return (
             <div
-              key={j}
+              key={i + j}
               className="flex items-center justify-center"
               style={{
                 gridArea: `${p[0]} / ${p[1]} / ${p[0] + instrument[0]} / ${

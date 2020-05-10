@@ -1,6 +1,13 @@
 import React from "react";
 
-const Player = ({ player, audio, setPlayer, setPlaying, delay }) => {
+const Player = ({
+  player,
+  midiPlayer,
+  audio,
+  setPlayer,
+  setPlaying,
+  delay,
+}) => {
   return (
     <div className="flex my-4 items-center justify-center text-lg">
       {player !== "PLAYING" && (
@@ -9,12 +16,12 @@ const Player = ({ player, audio, setPlayer, setPlaying, delay }) => {
           className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-gray-600"
           onClick={() => {
             if (player === "STOPED") {
-              window.MIDI.Player.start();
+              midiPlayer.current.play();
               setTimeout(() => {
                 audio.current.play();
               }, delay);
             } else {
-              window.MIDI.Player.start();
+              midiPlayer.current.play();
               audio.current.play();
             }
             setPlayer("PLAYING");
@@ -27,7 +34,7 @@ const Player = ({ player, audio, setPlayer, setPlaying, delay }) => {
         <button
           className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-gray-600"
           onClick={() => {
-            window.MIDI.Player.pause();
+            midiPlayer.current.pause();
             audio.current.pause();
             setPlayer("PAUSED");
           }}
@@ -39,7 +46,7 @@ const Player = ({ player, audio, setPlayer, setPlaying, delay }) => {
         <button
           className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-gray-600"
           onClick={() => {
-            window.MIDI.Player.stop();
+            midiPlayer.current.stop();
             audio.current.pause();
             audio.current.currentTime = 0;
             setPlaying({});

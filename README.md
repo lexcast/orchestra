@@ -6,7 +6,7 @@ See how instruments enter into action with a classical music piece.
 
 ## Install
 
-Just clone it or download the repository, and run `yarn install`.
+Just clone it or download the repository, and run `yarn install` & `npx patch-package` (This last command to apply a fix to one dependency while fix is merged).
 
 ## Available Scripts
 
@@ -24,7 +24,7 @@ Runs tailwindcss in the production mode.<br />
 
 I do not own any MIDI file in this repository each one has an attribution, with author and website specified.
 
-This project is using [MIDI.js](https://github.com/mudcube/MIDI.js/) without any soundfont loaded, it is used to listen each midi note played. A mp3 file is playing the sound.
+This project is using [MidiPlayerJS](https://github.com/grimmdude/MidiPlayerJS), it is used to listen each midi note played. A mp3 file is playing the sound.
 
 ## Icons
 

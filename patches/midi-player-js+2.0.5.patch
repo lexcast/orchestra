@@ -1,0 +1,13 @@
+diff --git a/node_modules/midi-player-js/browser/midiplayer.js b/node_modules/midi-player-js/browser/midiplayer.js
+index dd7fc46..7264767 100644
+--- a/node_modules/midi-player-js/browser/midiplayer.js
++++ b/node_modules/midi-player-js/browser/midiplayer.js
+@@ -2511,7 +2511,7 @@ var Player = function () {
+ 				return this.totalTicks - this.tick <= 0;
+ 			}
+ 
+-			return this.bytesProcessed() == this.buffer.length;
++			return this.bytesProcessed() >= this.buffer.length;
+ 		}
+ 
+ 		/**

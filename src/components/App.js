@@ -5,10 +5,18 @@ import Ensemble from "./Ensemble";
 import Details from "./Details";
 import List from "./List";
 import Progress from "./Progress";
+import IconsAttribution from "./IconsAttribution";
+import axios from "axios";
+import MidiPlayer from "midi-player-js";
 // import { start, check } from "utils/stopwatch";
 
 const midi = (key) => `${process.env.PUBLIC_URL}/midi/${key}.mid`;
 const mp3 = (key) => `${process.env.PUBLIC_URL}/mp3/${key}.mp3`;
+
+const loadMidi = async (url) => {
+  const { data } = await axios.get(url, { responseType: "arraybuffer" });
+  return data;
+};
 
 const keys = Object.keys(music);
 const DEFAULT_SONG = keys[(keys.length * Math.random()) << 0];
@@ -19,15 +27,17 @@ const App = () => {
   const [player, setPlayer] = useState("LOADING");
   const [song, setSong] = useState(DEFAULT_SONG);
   const audio = useRef();
+  const midiPlayer = useRef();
 
   const handleEnd = useCallback(() => {
     setPlayer("STOPED");
   }, []);
 
   const play = useCallback(
-    (songId, autoplay) => {
-      window.MIDI.Player.removeListener();
-      window.MIDI.Player.stop();
+    async (songId, autoplay) => {
+      if (midiPlayer.current) {
+        midiPlayer.current.stop();
+      }
       if (audio.current) {
         audio.current.removeEventListener("ended", handleEnd);
         audio.current.pause();
@@ -38,19 +48,6 @@ const App = () => {
       setSong(songId);
       audio.current = new Audio(mp3(songId));
       audio.current.addEventListener("ended", handleEnd);
-
-      window.MIDI.Player.loadFile(midi(songId), () => {
-        // start();
-        if (autoplay) {
-          window.MIDI.Player.start();
-          setTimeout(() => {
-            audio.current.play();
-          }, music[songId].delay);
-          setPlayer("PLAYING");
-        } else {
-          setPlayer("STOPED");
-        }
-      });
 
       const trackingMap = {};
       const byNote = music[songId].trackNotes;
@@ -68,52 +65,69 @@ const App = () => {
         });
       }
 
-      window.MIDI.Player.addListener((data) => {
-        const on = data.message === 144 ? true : false;
-        // console.log(check());
-        const changes = { [data.track]: on, d: on };
+      midiPlayer.current = new MidiPlayer.Player((event) => {
+        if (event.name === "Set Tempo") {
+          midiPlayer.current.pause();
+          midiPlayer.current.setTempo(event.data);
+          midiPlayer.current.play();
+          return;
+        }
 
-        const trackNote = trackingMap[`${data.track}.${data.note}`];
+        let on;
+        if ((!event.name || event.name === "Note on") && event.velocity > 0) {
+          on = true;
+        } else if (
+          event.name === "Note off" ||
+          ((!event.name || event.name === "Note on") && event.velocity === 0)
+        ) {
+          on = false;
+        } else {
+          return;
+        }
+        // console.log(check());
+        const changes = { [event.track - 1]: on, d: on };
+
+        const trackNote = trackingMap[`${event.track - 1}.${event.noteNumber}`];
         if (trackNote) {
           changes[trackNote] = on;
         }
 
-        const trackGroup = trackingMap[data.track];
+        const trackGroup = trackingMap[event.track - 1];
         if (trackGroup) {
           changes[trackGroup] = on;
         }
 
-        setPlaying((playing) => ({
-          ...playing,
-          ...changes,
-        }));
+        setPlaying((playing) => ({ ...playing, ...changes }));
       });
+
+      midiPlayer.current.loadArrayBuffer(await loadMidi(midi(songId)));
+      midiPlayer.current.setTempo(music[songId].bpm);
+
+      // start();
+      if (autoplay) {
+        midiPlayer.current.play();
+        setTimeout(() => {
+          audio.current.play();
+        }, music[songId].delay);
+        setPlayer("PLAYING");
+      } else {
+        setPlayer("STOPED");
+      }
     },
     [handleEnd]
   );
 
   useEffect(() => {
-    window.MIDI.Player.BPM = null;
-
-    window.MIDI.loadPlugin({
-      onsuccess: function () {
-        for (var i = 0; i <= 15; i++) {
-          window.MIDI.setVolume(i, 0);
-        }
-        const player = window.MIDI.Player;
-        player.timeWarp = 1;
-
-        play(DEFAULT_SONG, false);
-      },
-    });
+    play(DEFAULT_SONG, false);
 
     return () => {
       if (audio.current) {
         audio.current.removeEventListener("ended", handleEnd);
         audio.current.pause();
       }
-      window.MIDI.Player.removeListener();
-      window.MIDI.Player.stop();
+      if (midiPlayer.current) {
+        midiPlayer.current.stop();
+      }
     };
   }, [play, handleEnd]);
 
@@ -126,6 +140,7 @@ const App = () => {
           <Player
             {...{
               player,
+              midiPlayer,
               setPlayer,
               setPlaying,
               audio,
@@ -141,109 +156,7 @@ const App = () => {
           play(songId, true);
         }}
       />
-      <div className="border-t border-gray-300 p-4 w-full text-center m-1 font-sans text-xs text-gray-600 font-normal">
-        <div>
-          Icons made by{" "}
-          <a
-            href="https://www.flaticon.com/authors/smashicons"
-            title="Smashicons"
-          >
-            Smashicons
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>
-        </div>
-        <div>
-          Icons made by{" "}
-          <a
-            href="https://www.flaticon.com/authors/nikita-golubev"
-            title="Nikita Golubev"
-          >
-            Nikita Golubev
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>
-        </div>
-        <div>
-          Icons made by{" "}
-          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
-            Freepik
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>
-        </div>
-        <div>
-          Icons made by{" "}
-          <a
-            href="https://www.flaticon.com/authors/pongsakornred"
-            title="pongsakornRed"
-          >
-            pongsakornRed
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>
-        </div>
-        <div>
-          Icons made by{" "}
-          <a
-            href="https://www.flaticon.com/authors/mynamepong"
-            title="mynamepong"
-          >
-            mynamepong
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>
-        </div>
-        <div>
-          Icons made by{" "}
-          <a
-            href="https://www.flaticon.com/authors/photo3idea-studio"
-            title="photo3idea_studio"
-          >
-            photo3idea_studio
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>
-        </div>
-        <div>
-          Icons made by{" "}
-          <a
-            href="https://www.flaticon.com/authors/good-ware"
-            title="Good Ware"
-          >
-            Good Ware
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>
-        </div>
-        <div>
-          Icons made by{" "}
-          <a
-            href="https://www.flaticon.com/authors/vitaly-gorbachev"
-            title="Vitaly Gorbachev"
-          >
-            Vitaly Gorbachev
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>
-        </div>
-      </div>
+      <IconsAttribution />
     </div>
   );
 };

@@ -123,6 +123,37 @@
     },
     "trackNotes": { "8": { "G": [43], "C": [48] } }
   },
+  "beethoven_symphony_2_1": {
+    "title": "Symphony No.2 - 1st Movement",
+    "number": "Opus 36",
+    "key": "D major",
+    "composer": "beethoven",
+    "year": "1803",
+    "city": "Vienna",
+    "delay": 2150,
+    "bpm": 120,
+    "ensemble": "orchestra",
+    "midi_author": "Jean-François Lucarelli",
+    "midi_url": "http://www.espace-midi.com/",
+    "tracks": {
+      "flute": 1,
+      "oboe": 2,
+      "clarinet": 3,
+      "bassoon": 4,
+      "horn|0": 5,
+      "horn|1": 6,
+      "trumpet": 7,
+      "timpani|0": "A",
+      "timpani|1": "D",
+      "violin_1": 9,
+      "violin_2": 10,
+      "viola": 11,
+      "cello": 12,
+      "doublebass": 13,
+      "director": "d"
+    },
+    "trackNotes": { "8": { "A": [45], "D": [50] } }
+  },
   "beethoven_symphony_5_1": {
     "title": "Symphony No.5 - 1st Movement",
     "number": "Opus 67",

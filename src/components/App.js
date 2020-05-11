@@ -6,6 +6,7 @@ import Details from "./Details";
 import List from "./List";
 import Progress from "./Progress";
 import IconsAttribution from "./IconsAttribution";
+import GithubButtons from "./GithubButtons";
 import axios from "axios";
 import MidiPlayer from "midi-player-js";
 // import { start, check } from "utils/stopwatch";
@@ -133,6 +134,7 @@ const App = () => {
 
   return (
     <div className="bg-yellow-100 font-cursive text-center min-h-screen w-screen flex items-center justify-center flex-col">
+      <GithubButtons />
       <Ensemble {...{ playing, song: music[song] }} />
       {player !== "LOADING" && (
         <>

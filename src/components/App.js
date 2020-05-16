@@ -8,7 +8,7 @@ import Progress from "./Progress";
 import IconsAttribution from "./IconsAttribution";
 import GithubButtons from "./GithubButtons";
 import axios from "axios";
-import MidiPlayer from "midi-player-js";
+import MidiPlayer from "midi-player-js/build/index.js";
 // import { start, check } from "utils/stopwatch";
 
 const midi = (key) => `${process.env.PUBLIC_URL}/midi/${key}.mid`;

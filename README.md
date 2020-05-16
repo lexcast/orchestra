@@ -6,7 +6,7 @@ See how instruments enter into action with a classical music piece.
 
 ## Install
 
-Just clone it or download the repository, and run `yarn install` & `npx patch-package` (This last command to apply a fix to one dependency while fix is merged).
+Just clone it or download the repository, and run `yarn install`.
 
 ## Available Scripts
 

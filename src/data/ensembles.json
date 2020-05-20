@@ -55,7 +55,7 @@
     },
     "cello": {
       "positions": [
-        [28, 29],
+        [28, 30],
         [28, 33],
         [25, 33],
         [28, 36],
@@ -82,45 +82,59 @@
       ]
     },
     "piccolo": {
-      "positions": [[17, 21]]
+      "positions": [[16, 21]]
     },
     "flute": {
       "positions": [
-        [17, 25],
-        [17, 28]
+        [16, 25],
+        [16, 28]
       ]
     },
     "oboe": {
       "positions": [
-        [17, 31],
-        [17, 34]
+        [16, 31],
+        [16, 34]
+      ]
+    },
+    "english_horn": {
+      "positions": [
+        [16, 37],
+        [16, 40]
       ]
     },
     "clarinet": {
       "positions": [
-        [14, 20],
-        [14, 23]
+        [13, 20],
+        [13, 23]
       ]
     },
     "bassoon": {
       "positions": [
-        [14, 27],
-        [14, 30]
+        [13, 27],
+        [13, 30]
       ]
     },
     "contrabassoon": {
-      "positions": [[14, 34]]
+      "positions": [[13, 34]]
+    },
+    "cornet": {
+      "positions": [
+        [13, 16],
+        [13, 13]
+      ]
     },
     "horn": {
       "positions": [
-        [11, 19],
-        [11, 23]
+        [10, 23],
+        [10, 20],
+        [10, 17],
+        [10, 14]
       ]
     },
     "trumpet": {
       "positions": [
-        [11, 26],
-        [11, 30]
+        [10, 26],
+        [10, 30]
       ]
     },
     "trombone": {
@@ -133,7 +147,16 @@
     "tuba": { "positions": [[10, 46]] },
     "harp": { "positions": [[12, 8]] },
     "piano": { "positions": [[12, 4]] },
-    "glockenspiel": { "positions": [[7, 14]] },
+    "glockenspiel": { "positions": [[7, 12]] },
+    "bells": { "positions": [[7, 11]] },
+    "tambourine": { "positions": [[7, 15]] },
+    "cannon": {
+      "positions": [
+        [5, 3],
+        [8, 3],
+        [11, 3]
+      ]
+    },
     "triangle": { "positions": [[7, 18]] },
     "cymbals": { "positions": [[7, 21]] },
     "drum": { "positions": [[7, 24]] },

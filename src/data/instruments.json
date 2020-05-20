@@ -7,6 +7,7 @@
   "flute": [2, 2],
   "oboe": [2, 2],
   "clarinet": [3, 2],
+  "english_horn": [2, 2],
   "bassoon": [3, 2],
   "contrabassoon": [3, 3],
   "horn": [2, 2],
@@ -21,5 +22,9 @@
   "drum": [2, 2],
   "triangle": [2, 2],
   "bassdrum": [3, 3],
+  "cornet": [3, 3],
+  "tambourine": [2, 2],
+  "bells": [2, 3],
+  "cannon": [3, 3],
   "director": [3, 3]
 }

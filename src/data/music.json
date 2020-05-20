@@ -319,6 +319,63 @@
       "violin2": [10, 11]
     }
   },
+  "tchaikovsky_1812_overture": {
+    "title": "1812 Overture",
+    "number": "Opus 49",
+    "key": "E-flat major",
+    "composer": "tchaikovsky",
+    "year": "1882",
+    "city": "Moscow",
+    "delay": 7200,
+    "bpm": 44,
+    "ensemble": "orchestra",
+    "midi_author": "John Knowles",
+    "midi_url": "https://www.classicalarchives.com/contributor/925.html",
+    "tracks": {
+      "cannon": "cannon",
+      "bells": "bells",
+      "flute": 2,
+      "oboe": 3,
+      "clarinet": 4,
+      "english_horn": 5,
+      "bassoon": 6,
+      "horn|0,1": 7,
+      "horn|2,3": 8,
+      "cornet": 9,
+      "trumpet": 10,
+      "trombone": 11,
+      "tuba": 12,
+      "timpani|0": 13,
+      "triangle": "triangle",
+      "tambourine": "tambourine",
+      "drum": 15,
+      "bassdrum": "bassdrum",
+      "cymbals": "cymbals",
+      "violin_1": 17,
+      "violin_2": 18,
+      "viola": 19,
+      "cello": "cello",
+      "doublebass": 22,
+      "director": "d"
+    },
+    "groupTracks": {
+      "cello": [20, 21]
+    },
+    "trackNotes": {
+      "1": {
+        "cannon": [3, 6, 10],
+        "bells": [51, 53, 54, 56, 58, 59, 61, 63, 65, 66, 68, 70, 71]
+      },
+      "14": {
+        "tambourine": [54],
+        "triangle": [81]
+      },
+      "16": {
+        "bassdrum": [35],
+        "cymbals": [49]
+      }
+    }
+  },
   "williams_starwars_imperial_march": {
     "title": "The Imperial March",
     "number": "Star Wars V",

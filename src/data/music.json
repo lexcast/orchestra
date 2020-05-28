@@ -249,6 +249,37 @@
     },
     "trackNotes": { "8": { "A": [45], "D": [50] } }
   },
+  "beethoven_symphony_3_1": {
+    "title": "Symphony No.3 - 1st Movement",
+    "number": "Opus 55",
+    "key": "E-flat minor",
+    "composer": "beethoven",
+    "year": "1805",
+    "city": "Vienna",
+    "delay": 0,
+    "bpm": 180,
+    "ensemble": "orchestra",
+    "midi_author": "Daniel L. Viens",
+    "midi_url": "https://www.classicalarchives.com/contributor/1891.html",
+    "tracks": {
+      "flute": 5,
+      "oboe": 6,
+      "clarinet": 7,
+      "bassoon": 8,
+      "horn|0,1": 9,
+      "horn|2": 10,
+      "trumpet": 11,
+      "timpani|0": "A",
+      "timpani|1": "D",
+      "violin_1": 13,
+      "violin_2": 14,
+      "viola": 15,
+      "cello": 16,
+      "doublebass": 17,
+      "director": "d"
+    },
+    "trackNotes": { "8": { "A": [45], "D": [50] } }
+  },
   "beethoven_symphony_5_1": {
     "title": "Symphony No.5 - 1st Movement",
     "number": "Opus 67",

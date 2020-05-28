@@ -20,8 +20,17 @@ const loadMidi = async (url) => {
 };
 
 const keys = Object.keys(music);
-const DEFAULT_SONG = keys[(keys.length * Math.random()) << 0];
-// const DEFAULT_SONG = "beethoven_symphony_5_1";
+let DEFAULT_SONG = "";
+if (window.location.href.includes("#")) {
+  const songKey = window.location.href.split("#")[1];
+  if (keys.includes(songKey)) {
+    DEFAULT_SONG = songKey;
+  }
+}
+
+if (!DEFAULT_SONG) {
+  DEFAULT_SONG = keys[(keys.length * Math.random()) << 0];
+}
 
 const App = () => {
   const [playing, setPlaying] = useState({});
@@ -140,14 +149,8 @@ const App = () => {
         <>
           <Progress {...{ audio, song }} />
           <Player
-            {...{
-              player,
-              midiPlayer,
-              setPlayer,
-              setPlaying,
-              audio,
-              delay: music[song].delay,
-            }}
+            {...{ player, midiPlayer, setPlayer, setPlaying, audio }}
+            delay={music[song].delay}
           />
         </>
       )}

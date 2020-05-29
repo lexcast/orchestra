@@ -278,7 +278,42 @@
       "doublebass": 17,
       "director": "d"
     },
-    "trackNotes": { "8": { "A": [45], "D": [50] } }
+    "trackNotes": { "12": { "A": [45], "D": [50] } }
+  },
+  "beethoven_symphony_3_2": {
+    "title": "Symphony No.3 - 2nd Movement",
+    "number": "Opus 55",
+    "key": "E-flat minor",
+    "composer": "beethoven",
+    "year": "1805",
+    "city": "Vienna",
+    "delay": 0,
+    "bpm": 100,
+    "ensemble": "orchestra",
+    "midi_author": "Daniel L. Viens",
+    "midi_url": "https://www.classicalarchives.com/contributor/1891.html",
+    "tracks": {
+      "flute|0": "flute1",
+      "flute|1": 6,
+      "oboe": 7,
+      "clarinet": 8,
+      "bassoon": 9,
+      "horn|0,1": 10,
+      "horn|2": 11,
+      "trumpet": 12,
+      "timpani|0": "G",
+      "timpani|1": "C",
+      "violin_1": 14,
+      "violin_2": 15,
+      "viola": 16,
+      "cello": 17,
+      "doublebass": 18,
+      "director": "d"
+    },
+    "groupTracks": {
+      "flute1": [5, 6]
+    },
+    "trackNotes": { "13": { "G": [43], "C": [48] } }
   },
   "beethoven_symphony_5_1": {
     "title": "Symphony No.5 - 1st Movement",
@@ -357,7 +392,7 @@
     "composer": "tchaikovsky",
     "year": "1882",
     "city": "Moscow",
-    "delay": 7200,
+    "delay": 7180,
     "bpm": 44,
     "ensemble": "orchestra",
     "midi_author": "John Knowles",

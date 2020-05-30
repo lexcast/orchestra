@@ -4,10 +4,9 @@
   "private": true,
   "homepage": "https://lexcast.github.io/orchestra/",
   "dependencies": {
-    "autoprefixer": "^9.7.6",
+    "autoprefixer": "^9.8.0",
     "axios": "^0.19.2",
-    "gh-pages": "^2.2.0",
-    "midi-player-js": "^2.0.8",
+    "midi-player-js": "^2.0.13",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -19,8 +18,7 @@
     "build:tw": "./node_modules/.bin/postcss ./src/styles/tailwind.css -o ./src/styles/index.css --env production",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn build:tw && yarn build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "yarn build:tw && yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -453,6 +453,50 @@
       "violin2": [10, 11]
     }
   },
+  "tchaikovsky_romeo_juliet_overture": {
+    "title": "Romeo and Juliet Fantasy Overture",
+    "number": "TH 42",
+    "key": "B minor",
+    "composer": "tchaikovsky",
+    "year": "1870",
+    "city": "Moscow",
+    "delay": 2200,
+    "bpm": 111,
+    "ensemble": "orchestra",
+    "midi_author": "Maurizio Salvi",
+    "midi_url": "https://www.classicalarchives.com/contributor/1548.html",
+    "tracks": {
+      "flute": 4,
+      "oboe": 5,
+      "clarinet": 6,
+      "horn": 7,
+      "harp": 8,
+      "timpani|0": "timpani1",
+      "timpani|1": "timpani2",
+      "timpani|2": "timpani3",
+      "timpani|3": "timpani4",
+      "cymbals": 10,
+      "bassoon": 11,
+      "english_horn": 12,
+      "trumpet": 13,
+      "trombone": 14,
+      "tuba": 15,
+      "violin_1": 1,
+      "violin_2": 1,
+      "viola": 2,
+      "cello": 3,
+      "doublebass": 3,
+      "director": "d"
+    },
+    "trackNotes": {
+      "9": {
+        "timpani1": [21, 22, 23, 24, 25, 26],
+        "timpani2": [27, 28, 29, 30, 31],
+        "timpani3": [32, 33, 34, 35, 36],
+        "timpani4": [39, 40, 42, 47, 52]
+      }
+    }
+  },
   "tchaikovsky_1812_overture": {
     "title": "1812 Overture",
     "number": "Opus 49",

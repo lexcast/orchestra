@@ -497,6 +497,43 @@
       }
     }
   },
+  "tchaikovsky_swan_lake_2_10": {
+    "title": "Swan Lake Act II Scène: Moderato",
+    "number": "Opus 20",
+    "key": "A minor",
+    "composer": "tchaikovsky",
+    "year": "1877",
+    "city": "Moscow",
+    "delay": 1300,
+    "bpm": 240,
+    "ensemble": "orchestra",
+    "midi_author": "Jean-François Lucarelli",
+    "midi_url": "http://www.espace-midi.com/",
+    "tracks": {
+      "flute": 1,
+      "oboe": 2,
+      "clarinet": 3,
+      "bassoon": 4,
+      "horn|0,1": 5,
+      "horn|2,3": 6,
+      "trumpet": 7,
+      "trombone|0,1": 8,
+      "trombone|2": 9,
+      "tuba": 10,
+      "timpani|0": "F",
+      "timpani|1": "B",
+      "harp": 12,
+      "violin_1": 13,
+      "violin_2": 14,
+      "viola": 15,
+      "cello": 16,
+      "doublebass": 17,
+      "director": "d"
+    },
+    "trackNotes": {
+      "11": { "F": [42], "B": [47] }
+    }
+  },
   "tchaikovsky_1812_overture": {
     "title": "1812 Overture",
     "number": "Opus 49",

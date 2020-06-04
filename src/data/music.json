@@ -497,6 +497,49 @@
       }
     }
   },
+  "tchaikovsky_swan_lake_2_2": {
+    "title": "Swan Lake Act I Waltz: Tempo di valse",
+    "number": "Opus 20",
+    "key": "A minor",
+    "composer": "tchaikovsky",
+    "year": "1877",
+    "city": "Moscow",
+    "delay": 1000,
+    "bpm": 240,
+    "ensemble": "orchestra",
+    "midi_author": "Jean-François Lucarelli",
+    "midi_url": "http://www.espace-midi.com/",
+    "tracks": {
+      "harp": "ex",
+      "piccolo": 1,
+      "flute": 2,
+      "oboe": 3,
+      "clarinet": 4,
+      "bassoon": 5,
+      "horn|0,1": 6,
+      "horn|2,3": 7,
+      "cornet": 8,
+      "trumpet": 9,
+      "trombone|0,1": 10,
+      "trombone|2": 11,
+      "tuba": 12,
+      "timpani|0": "F",
+      "timpani|1": "A",
+      "timpani|2": "E",
+      "triangle": 14,
+      "cymbals": 15,
+      "bassdrum": 16,
+      "violin_1": 17,
+      "violin_2": 18,
+      "viola": 19,
+      "cello": 20,
+      "doublebass": 21,
+      "director": "d"
+    },
+    "trackNotes": {
+      "13": { "F": [42], "A": [45], "E": [52] }
+    }
+  },
   "tchaikovsky_swan_lake_2_10": {
     "title": "Swan Lake Act II Scène: Moderato",
     "number": "Opus 20",
@@ -510,6 +553,12 @@
     "midi_author": "Jean-François Lucarelli",
     "midi_url": "http://www.espace-midi.com/",
     "tracks": {
+      "piccolo": "ex",
+      "cornet": "ex",
+      "triangle": "ex",
+      "cymbals": "ex",
+      "bassdrum": "ex",
+      "timpani|2": "ex",
       "flute": 1,
       "oboe": 2,
       "clarinet": 3,

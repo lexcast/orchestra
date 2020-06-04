@@ -8,7 +8,7 @@ import Progress from "./Progress";
 import IconsAttribution from "./IconsAttribution";
 import GithubButtons from "./GithubButtons";
 import axios from "axios";
-import MidiPlayer from "midi-player-js/build/index.js";
+import MidiPlayer from "midi-player-js";
 // import { start, check } from "utils/stopwatch";
 
 const midi = (key) => `${process.env.PUBLIC_URL}/midi/${key}.mid`;
@@ -76,13 +76,6 @@ const App = () => {
       }
 
       midiPlayer.current = new MidiPlayer.Player((event) => {
-        if (event.name === "Set Tempo") {
-          midiPlayer.current.pause();
-          midiPlayer.current.setTempo(event.data);
-          midiPlayer.current.play();
-          return;
-        }
-
         let on;
         if ((!event.name || event.name === "Note on") && event.velocity > 0) {
           on = true;

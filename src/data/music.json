@@ -161,7 +161,7 @@
     "composer": "beethoven",
     "year": "1803",
     "city": "Vienna",
-    "delay": 0,
+    "delay": 300,
     "bpm": 120,
     "ensemble": "orchestra",
     "midi_author": "Jean-François Lucarelli",

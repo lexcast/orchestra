@@ -511,6 +511,7 @@
     "midi_url": "http://www.espace-midi.com/",
     "tracks": {
       "harp": "ex",
+      "drum": "ex",
       "piccolo": 1,
       "flute": 2,
       "oboe": 3,
@@ -559,6 +560,7 @@
       "cymbals": "ex",
       "bassdrum": "ex",
       "timpani|2": "ex",
+      "drum": "ex",
       "flute": 1,
       "oboe": 2,
       "clarinet": 3,
@@ -581,6 +583,56 @@
     },
     "trackNotes": {
       "11": { "F": [42], "B": [47] }
+    }
+  },
+  "tchaikovsky_swan_lake_2_13": {
+    "title": "Swan Lake Act II Dances of the Swans",
+    "number": "Opus 20",
+    "key": "A minor",
+    "composer": "tchaikovsky",
+    "year": "1877",
+    "city": "Moscow",
+    "delay": 800,
+    "bpm": 240,
+    "ensemble": "orchestra",
+    "midi_author": "Jean-François Lucarelli",
+    "midi_url": "http://www.espace-midi.com/",
+    "tracks": {
+      "piccolo": 1,
+      "flute": 2,
+      "oboe": 3,
+      "clarinet": 4,
+      "bassoon": 5,
+      "horn|0,1": 6,
+      "horn|2,3": 7,
+      "cornet": 8,
+      "trumpet": 9,
+      "trombone|0,1": 10,
+      "trombone|2": 11,
+      "tuba": 12,
+      "timpani|0": "T1",
+      "timpani|1": "T2",
+      "timpani|2": "T3",
+      "triangle": 14,
+      "drum": 15,
+      "cymbals": 16,
+      "bassdrum": 17,
+      "harp": 18,
+      "violin_1|0": "violin_solo",
+      "cello|0": "cello_solo",
+      "violin_1": 21,
+      "violin_2": 22,
+      "viola": 23,
+      "cello": 24,
+      "doublebass": 25,
+      "director": "d"
+    },
+    "groupTracks": {
+      "violin_solo": [19, 21],
+      "cello_solo": [20, 24]
+    },
+    "trackNotes": {
+      "13": { "T1": [44, 45], "T2": [47, 48, 49], "T3": [51, 52] }
     }
   },
   "tchaikovsky_1812_overture": {

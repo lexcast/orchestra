@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
-import music from "data/music";
+import musicdata from "data/music";
 import Player from "./Player";
 import Ensemble from "./Ensemble";
 import Details from "./Details";
@@ -18,6 +18,17 @@ const loadMidi = async (url) => {
   const { data } = await axios.get(url, { responseType: "arraybuffer" });
   return data;
 };
+
+const music = {};
+Object.entries(musicdata).forEach(([i, s]) => {
+  if (s.movements) {
+    Object.entries(s.movements).forEach(([j, ss]) => {
+      music[i + "_" + j] = { ...s, ...ss, title: s.title + " " + ss.subtitle };
+    });
+  } else {
+    music[i] = s;
+  }
+});
 
 const keys = Object.keys(music);
 let DEFAULT_SONG = "";

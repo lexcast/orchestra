@@ -370,6 +370,32 @@
         "trackNotes": {
           "8": { "F": [41], "A": [46] }
         }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Adagio",
+        "delay": 1000,
+        "bpm": 150,
+        "tracks": {
+          "flute": 1,
+          "oboe": 2,
+          "clarinet": 3,
+          "bassoon": 4,
+          "horn|0": 5,
+          "horn|1": 6,
+          "trumpet": 7,
+          "timpani|0": "A",
+          "timpani|1": "D",
+          "violin_1": 9,
+          "violin_2": 10,
+          "viola": 11,
+          "cello": 12,
+          "doublebass": 13,
+          "director": "d"
+        },
+        "trackNotes": {
+          "8": { "A": [46], "D": [51] }
+        }
       }
     }
   },

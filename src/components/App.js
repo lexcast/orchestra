@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import musicdata from "data/music";
+import composers from "data/composers";
 import Player from "./Player";
 import Ensemble from "./Ensemble";
 import Details from "./Details";
@@ -10,6 +11,8 @@ import GithubButtons from "./GithubButtons";
 import axios from "axios";
 import MidiPlayer from "midi-player-js";
 // import { start, check } from "utils/stopwatch";
+
+const image = (key) => `${process.env.PUBLIC_URL}/images/composers/${key}.jpg`;
 
 const midi = (key) => `${process.env.PUBLIC_URL}/midi/${key}.mid`;
 const mp3 = (key) => `${process.env.PUBLIC_URL}/mp3/${key}.mp3`;
@@ -118,6 +121,19 @@ const App = () => {
       midiPlayer.current.setTempo(music[songId].bpm);
 
       // start();
+      if ("mediaSession" in navigator) {
+        navigator.mediaSession.metadata = new window.MediaMetadata({
+          title: music[songId].title,
+          artist: composers[music[songId].composer].name,
+          artwork: [
+            {
+              src: image(music[songId].composer),
+              sizes: ["512x512"],
+              type: "image/jpg",
+            },
+          ],
+        });
+      }
       if (autoplay) {
         midiPlayer.current.play();
         setTimeout(() => {

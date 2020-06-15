@@ -762,6 +762,42 @@
       }
     }
   },
+  "tchaikovsky_nutcracker": {
+    "title": "The Nutcracker Suite",
+    "number": "Opus 71a",
+    "composer": "tchaikovsky",
+    "year": "1892",
+    "city": "Saint Petersburg",
+    "ensemble": "orchestra",
+    "midi_author": "Johann Kirschbaum",
+    "midi_url": "https://www.classicalarchives.com/contributor/910.html",
+    "movements": {
+      "2_a": {
+        "title": "II.a",
+        "subtitle": "Marche",
+        "key": "E major",
+        "delay": 960,
+        "bpm": 250,
+        "tracks": {
+          "flute": 1,
+          "oboe": 2,
+          "clarinet": 3,
+          "bassoon": 4,
+          "horn": 5,
+          "trumpet": 6,
+          "trombone|0,1": 7,
+          "trombone|2": 8,
+          "tuba": 9,
+          "cymbals": 10,
+          "violin_1": 11,
+          "violin_2": 12,
+          "viola": 13,
+          "cello": 14,
+          "doublebass": 15
+        }
+      }
+    }
+  },
   "williams_starwars_imperial_march": {
     "title": "The Imperial March",
     "number": "Star Wars V",

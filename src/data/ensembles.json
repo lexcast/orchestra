@@ -46,11 +46,11 @@
         [23, 26],
         [26, 29],
         [23, 29],
+        [20, 23],
         [20, 29],
         [20, 32],
         [23, 32],
-        [20, 26],
-        [20, 23]
+        [20, 26]
       ]
     },
     "cello": {
@@ -108,14 +108,17 @@
         [13, 23]
       ]
     },
+    "bassclarinet": {
+      "positions": [[13, 26]]
+    },
     "bassoon": {
       "positions": [
-        [13, 27],
-        [13, 30]
+        [13, 29],
+        [13, 32]
       ]
     },
     "contrabassoon": {
-      "positions": [[13, 34]]
+      "positions": [[13, 36]]
     },
     "cornet": {
       "positions": [
@@ -147,6 +150,7 @@
     "tuba": { "positions": [[10, 46]] },
     "harp": { "positions": [[12, 8]] },
     "piano": { "positions": [[12, 4]] },
+    "celesta": { "positions": [[12, 4]] },
     "glockenspiel": { "positions": [[7, 12]] },
     "bells": { "positions": [[7, 11]] },
     "tambourine": { "positions": [[7, 15]] },

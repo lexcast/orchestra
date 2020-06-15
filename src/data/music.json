@@ -781,6 +781,8 @@
         "delay": 960,
         "bpm": 250,
         "tracks": {
+          "celesta": "ex",
+          "bassclarinet": "ex",
           "flute": 1,
           "oboe": 2,
           "clarinet": 3,
@@ -795,7 +797,41 @@
           "violin_2": 12,
           "viola": 13,
           "cello": 14,
-          "doublebass": 15
+          "doublebass": 15,
+          "director": "d"
+        }
+      },
+      "2_b": {
+        "title": "II.b",
+        "subtitle": "Dance of the Sugar Plum Fairy",
+        "key": "C major",
+        "delay": 482,
+        "bpm": 250,
+        "tracks": {
+          "cymbals": "ex",
+          "trumpet": "ex",
+          "trombone": "ex",
+          "tuba": "ex",
+          "violin_1|4,5,6,7,8,9,10,11,12,13,14,15,16,17": "ex",
+          "violin_2|4,5,6,7,8,9": "ex",
+          "viola|4,5,6,7": "ex",
+          "cello|4,5,6,7,8,9,10": "ex",
+          "doublebass|2,3,4,5,6,7,8": "ex",
+          "flute": 1,
+          "oboe": 2,
+          "english_horn": 3,
+          "clarinet|0": 4,
+          "clarinet|1": 5,
+          "bassclarinet": 6,
+          "bassoon": 7,
+          "horn": 8,
+          "celesta": 9,
+          "violin_1|0,1,2,3": 10,
+          "violin_2|0,1,2,3": 11,
+          "viola|0,1,2,3": 12,
+          "cello|0,1,2,3": 13,
+          "doublebass|0,1": 14,
+          "director": "d"
         }
       }
     }

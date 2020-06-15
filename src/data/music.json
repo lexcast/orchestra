@@ -575,10 +575,9 @@
       }
     }
   },
-  "tchaikovsky_swan_lake_2": {
-    "title": "Swan Lake  ",
+  "tchaikovsky_swan_lake": {
+    "title": "Swan Lake",
     "number": "Opus 20",
-    "key": "A minor",
     "composer": "tchaikovsky",
     "year": "1877",
     "city": "Moscow",
@@ -586,9 +585,10 @@
     "midi_author": "Jean-François Lucarelli",
     "midi_url": "http://www.espace-midi.com/",
     "movements": {
-      "2": {
+      "1_2": {
         "title": "I.2",
-        "subtitle": "Act I Waltz: Tempo di valse",
+        "subtitle": "Waltz: Tempo di valse",
+        "key": "A major",
         "delay": 1000,
         "bpm": 240,
         "tracks": {
@@ -623,9 +623,10 @@
           "13": { "F": [42], "A": [45], "E": [52] }
         }
       },
-      "10": {
+      "2_10": {
         "title": "II.10",
-        "subtitle": "Act II Scène: Moderato",
+        "subtitle": "Scène: Moderato",
+        "key": "E minor",
         "delay": 1300,
         "bpm": 240,
         "tracks": {
@@ -660,9 +661,10 @@
           "11": { "F": [42], "B": [47] }
         }
       },
-      "13": {
+      "2_13": {
         "title": "II.13",
-        "subtitle": "Act II Dances of the Swans",
+        "subtitle": "Dances of the Swans",
+        "key": "A major",
         "delay": 800,
         "bpm": 240,
         "tracks": {

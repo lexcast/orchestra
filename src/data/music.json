@@ -781,6 +781,11 @@
         "delay": 960,
         "bpm": 250,
         "tracks": {
+          "triangle": "ex",
+          "english_horn": "ex",
+          "piccolo": "ex",
+          "timpani": "ex",
+          "harp": "ex",
           "celesta": "ex",
           "bassclarinet": "ex",
           "flute": 1,
@@ -808,10 +813,14 @@
         "delay": 482,
         "bpm": 250,
         "tracks": {
+          "timpani": "ex",
+          "triangle": "ex",
+          "piccolo": "ex",
           "cymbals": "ex",
           "trumpet": "ex",
           "trombone": "ex",
           "tuba": "ex",
+          "harp": "ex",
           "violin_1|4,5,6,7,8,9,10,11,12,13,14,15,16,17": "ex",
           "violin_2|4,5,6,7,8,9": "ex",
           "viola|4,5,6,7": "ex",
@@ -832,6 +841,44 @@
           "cello|0,1,2,3": 13,
           "doublebass|0,1": 14,
           "director": "d"
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Waltz of the Flowers",
+        "key": "D major",
+        "delay": 720,
+        "bpm": 250,
+        "tracks": {
+          "celesta": "ex",
+          "english_horn": "ex",
+          "bassclarinet": "ex",
+          "cymbals": "ex",
+          "flute": 1,
+          "piccolo": 1,
+          "oboe": 2,
+          "clarinet": 3,
+          "bassoon": 4,
+          "horn|0,1": 5,
+          "horn|2,3": 6,
+          "trumpet": 7,
+          "trombone": 8,
+          "tuba": 9,
+          "triangle": 10,
+          "timpani|0": "E",
+          "timpani|1": "D",
+          "timpani|2": "C",
+          "timpani|3": "A",
+          "harp": 12,
+          "violin_1": 13,
+          "violin_2": 14,
+          "viola": 15,
+          "cello": 16,
+          "doublebass": 17,
+          "director": "d"
+        },
+        "trackNotes": {
+          "11": { "A": [45], "C": [48], "D": [50], "E": [52] }
         }
       }
     }

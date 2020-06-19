@@ -469,7 +469,7 @@
       "1": {
         "title": "I",
         "subtitle": "Allegro con brio",
-        "delay": 1000,
+        "delay": 768,
         "bpm": 154,
         "tracks": {
           "flute": 1,
@@ -478,7 +478,8 @@
           "bassoon": 4,
           "horn|0,1": 5,
           "trumpet": 6,
-          "timpani|0": 7,
+          "timpani|0": "C",
+          "timpani|1": "G",
           "violin_1": 8,
           "violin_2": 9,
           "viola": 10,
@@ -487,6 +488,40 @@
           "director": "d",
           "contrabassoon": "ex",
           "piccolo": "ex"
+        },
+        "trackNotes": {
+          "7": { "G": [43], "C": [48] }
+        }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Andante con moto",
+        "delay": 1600,
+        "bpm": 34,
+        "tracks": {
+          "flute": 1,
+          "oboe": 2,
+          "clarinet|0": 3,
+          "clarinet|1": 4,
+          "bassoon|0": 5,
+          "bassoon|1": 6,
+          "horn|0": 7,
+          "horn|1": 8,
+          "trumpet|0": 9,
+          "trumpet|1": 10,
+          "timpani|0": "C",
+          "timpani|1": "G",
+          "violin_1": 12,
+          "violin_2": 13,
+          "viola": 14,
+          "cello": 15,
+          "doublebass": 16,
+          "director": "d",
+          "contrabassoon": "ex",
+          "piccolo": "ex"
+        },
+        "trackNotes": {
+          "11": { "G": [43], "C": [48] }
         }
       }
     }

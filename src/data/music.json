@@ -487,6 +487,7 @@
           "doublebass": 12,
           "director": "d",
           "contrabassoon": "ex",
+          "trombone": "ex",
           "piccolo": "ex"
         },
         "trackNotes": {
@@ -518,10 +519,41 @@
           "doublebass": 16,
           "director": "d",
           "contrabassoon": "ex",
+          "trombone": "ex",
           "piccolo": "ex"
         },
         "trackNotes": {
           "11": { "G": [43], "C": [48] }
+        }
+      },
+      "3-4": {
+        "title": "III-IV",
+        "subtitle": "Scherzo. Allegro - Allegro",
+        "delay": 400,
+        "bpm": 210,
+        "tracks": {
+          "piccolo": 1,
+          "flute": 2,
+          "oboe": 3,
+          "clarinet": 4,
+          "bassoon": 5,
+          "contrabassoon": 6,
+          "horn|0,1": 7,
+          "trumpet": 8,
+          "timpani|0": "C",
+          "timpani|1": "G",
+          "trombone|0": 10,
+          "trombone|1": 11,
+          "trombone|2": 12,
+          "violin_1": 13,
+          "violin_2": 14,
+          "viola": 15,
+          "cello": 16,
+          "doublebass": 17,
+          "director": "d"
+        },
+        "trackNotes": {
+          "9": { "G": [43], "C": [48] }
         }
       }
     }

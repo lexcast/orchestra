@@ -9,6 +9,11 @@
     "city": "Żelazowa Wola",
     "year": "1810"
   },
+  "mozart": {
+    "name": "Wolfgang Amadeus Mozart",
+    "city": "Salzburg",
+    "year": "1756"
+  },
   "tchaikovsky": {
     "name": "Pyotr Ilyich Tchaikovsky",
     "city": "Vótkinsk",

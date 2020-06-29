@@ -1,4 +1,15 @@
 {
+  "chamber_1": {
+    "violin": {
+      "positions": [
+        [27, 19],
+        [26, 22]
+      ]
+    },
+    "viola": { "positions": [[25, 25]] },
+    "cello": { "positions": [[25, 29]] },
+    "doublebass": { "positions": [[26, 33]] }
+  },
   "orchestra": {
     "director": {
       "positions": [[28, 24]]

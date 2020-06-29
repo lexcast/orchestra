@@ -629,6 +629,32 @@
       }
     }
   },
+  "mozart_serenade_13": {
+    "title": "Serenade No.13 Eine kleine Nachtmusik",
+    "number": "K. 525",
+    "key": "G major",
+    "composer": "mozart",
+    "year": "1787",
+    "city": "Vienna",
+    "ensemble": "chamber_1",
+    "midi_author": "Masahiro Ishii",
+    "midi_url": "https://www.classicalarchives.com/contributor/816.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro",
+        "delay": 1600,
+        "bpm": 138,
+        "tracks": {
+          "violin|0": 1,
+          "violin|1": 2,
+          "viola": 3,
+          "cello": 4,
+          "doublebass": 5
+        }
+      }
+    }
+  },
   "mozart_symphony_40": {
     "title": "Symphony No.40",
     "number": "K. 550",

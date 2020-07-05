@@ -686,6 +686,48 @@
       }
     }
   },
+  "mozart_requiem": {
+    "title": "Requiem",
+    "number": "K. 626",
+    "key": "D minor",
+    "composer": "mozart",
+    "year": "1791",
+    "city": "Vienna",
+    "ensemble": "orchestra",
+    "midi_author": "Daniel L. Viens",
+    "midi_url": "https://www.classicalarchives.com/contributor/1891.html",
+    "movements": {
+      "3_f": {
+        "title": "III.f",
+        "subtitle": "Lacrymosa",
+        "delay": 0,
+        "bpm": 54,
+        "tracks": {
+          "bassclarinet": 5,
+          "bassoon": 6,
+          "trumpet": 7,
+          "trombone|0": 8,
+          "trombone|1": 9,
+          "trombone|2": 10,
+          "violin_1": 11,
+          "violin_2": 12,
+          "viola": 13,
+          "cello": 14,
+          "doublebass": 15,
+          "choir_alto|0,1,2,3": 16,
+          "choir_alto|4,5,6,7": 17,
+          "choir_bass|0,1,2,3": 18,
+          "choir_bass|4,5,6,7": 19,
+          "timpani|0": "D",
+          "timpani|1": "A",
+          "director": "d"
+        },
+        "trackNotes": {
+          "20": { "A": [45], "D": [50] }
+        }
+      }
+    }
+  },
   "tchaikovsky_romeo_juliet_overture": {
     "title": "Romeo and Juliet Fantasy Overture",
     "number": "TH 42",

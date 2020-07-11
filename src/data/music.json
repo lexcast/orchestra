@@ -595,6 +595,36 @@
           "viola": [8, 13],
           "cello": [9, 14]
         }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Andante molto mosso",
+        "delay": 2500,
+        "bpm": 140,
+        "tracks": {
+          "flute|0": 1,
+          "flute|1": 2,
+          "oboe": 3,
+          "clarinet|0": 4,
+          "clarinet|1": 5,
+          "bassoon|0": 6,
+          "bassoon|1": 7,
+          "horn|0,1": 8,
+          "violin_1": "violin1",
+          "violin_2": "violin2",
+          "viola": "viola",
+          "cello": "cello",
+          "doublebass": 15,
+          "director": "d",
+          "timpani|0,1": "ex",
+          "piccolo": "ex"
+        },
+        "groupTracks": {
+          "violin1": [9, 16],
+          "violin2": [10, 17],
+          "viola": [11, 18],
+          "cello": [12, 13, 14, 19]
+        }
       }
     }
   },

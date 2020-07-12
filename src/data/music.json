@@ -587,6 +587,8 @@
           "doublebass": 10,
           "director": "d",
           "timpani|0,1": "ex",
+          "trumpet": "ex",
+          "trombone": "ex",
           "piccolo": "ex"
         },
         "groupTracks": {
@@ -617,6 +619,8 @@
           "doublebass": 15,
           "director": "d",
           "timpani|0,1": "ex",
+          "trumpet": "ex",
+          "trombone": "ex",
           "piccolo": "ex"
         },
         "groupTracks": {
@@ -624,6 +628,30 @@
           "violin2": [10, 17],
           "viola": [11, 18],
           "cello": [12, 13, 14, 19]
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Allegro",
+        "delay": 1000,
+        "bpm": 155,
+        "tracks": {
+          "piccolo": 1,
+          "flute": 2,
+          "oboe": 3,
+          "clarinet": 4,
+          "bassoon": 5,
+          "horn|0,1": 6,
+          "trumpet": 7,
+          "trombone": 8,
+          "timpani|0": 9,
+          "violin_1": 10,
+          "violin_2": 11,
+          "viola": 12,
+          "cello": 13,
+          "doublebass": 14,
+          "director": "d",
+          "timpani|1": "ex"
         }
       }
     }

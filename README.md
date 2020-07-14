@@ -1,4 +1,5 @@
 # Orchestra
+![CI DEPLOY](https://github.com/lexcast/orchestra/workflows/CI%20DEPLOY/badge.svg)
 
 See how instruments enter into action with a classical music piece.
 

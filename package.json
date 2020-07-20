@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "https://lexcast.github.io/orchestra/",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "autoprefixer": "^9.8.0",
     "axios": "^0.19.2",
     "midi-player-js": "^2.0.13",

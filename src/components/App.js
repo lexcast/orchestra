@@ -47,6 +47,7 @@ if (!DEFAULT_SONG) {
 }
 
 const App = () => {
+  const [sidebar, setSidebar] = useState();
   const [playing, setPlaying] = useState({});
   const [player, setPlayer] = useState("LOADING");
   const [song, setSong] = useState(DEFAULT_SONG);
@@ -162,26 +163,35 @@ const App = () => {
   }, [play, handleEnd]);
 
   return (
-    <div className="bg-yellow-100 font-cursive text-center min-h-screen w-screen flex items-center justify-center flex-col">
+    <div className="py-6 px-10 bg-yellow-100 font-cursive text-center h-screen w-screen overflow-hidden flex justify-start flex-no-wrap items-center flex-col">
       <GithubButtons />
       <Ensemble {...{ playing, song: music[song] }} />
       {player !== "LOADING" && (
-        <>
+        <div className="mt-12">
           <Progress {...{ audio, song }} />
           <Player
-            {...{ player, midiPlayer, setPlayer, setPlaying, audio }}
+            {...{
+              player,
+              midiPlayer,
+              setPlayer,
+              setPlaying,
+              audio,
+              setSidebar,
+            }}
             delay={music[song].delay}
           />
-        </>
+        </div>
       )}
       <Details song={music[song]} />
-      <List
-        song={song}
-        onClick={(songId) => {
-          play(songId, true);
-        }}
-      />
-      <IconsAttribution />
+      {sidebar === "playlist" && (
+        <List
+          {...{ song, setSidebar }}
+          onClick={(songId) => {
+            play(songId, true);
+          }}
+        />
+      )}
+      {sidebar === "attribution" && <IconsAttribution {...{ setSidebar }} />}
     </div>
   );
 };

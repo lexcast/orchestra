@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import composers from "data/composers";
 import music from "data/music";
 
-const List = ({ song, onClick }) => {
+const List = ({ song, onClick, setSidebar }) => {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      e.stopPropagation();
+
+      if (el.current && !el.current.contains(e.target)) {
+        setSidebar();
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => document.removeEventListener("click", handleOutsideClick);
+  }, []);
+
   return (
-    <div className="mb-6 text-left relative md:absolute max-w-xl top-0 left-0 md:m-4 max-w-xl md:w-auto">
+    <div
+      ref={el}
+      className="h-full overflow-y-auto bg-yellow-100 shadow text-left absolute top-0 left-0 w-64"
+    >
       {Object.entries(music).map(([key, { title, composer, movements }]) => (
         <div
           key={key}

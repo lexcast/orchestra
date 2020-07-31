@@ -17,12 +17,12 @@ const List = ({ song, onClick, setSidebar }) => {
     document.addEventListener("click", handleOutsideClick);
 
     return () => document.removeEventListener("click", handleOutsideClick);
-  }, []);
+  }, [setSidebar]);
 
   return (
     <div
       ref={el}
-      className="h-full overflow-y-auto bg-yellow-100 shadow text-left absolute top-0 left-0 w-64"
+      className="h-full overflow-y-auto bg-yellow-100 shadow-lg text-left absolute top-0 left-0 w-64"
     >
       {Object.entries(music).map(([key, { title, composer, movements }]) => (
         <div
@@ -32,7 +32,7 @@ const List = ({ song, onClick, setSidebar }) => {
             setSidebar();
           }}
           className={
-            "cursor-pointer py-1 px-4 py-1 " +
+            "cursor-pointer px-4 py-2 " +
             (song.includes(key)
               ? "border-l-4 border-purple-500 bg-purple-100"
               : "opacity-50 hover:opacity-100")

@@ -7,3 +7,15 @@ body,
 #root {
   @apply bg-yellow-100 h-screen overflow-hidden;
 }
+
+.attribution div {
+  @apply my-2;
+}
+
+.attribution a {
+  @apply text-purple-600;
+}
+
+.attribution a:hover {
+  @apply text-purple-700;
+}

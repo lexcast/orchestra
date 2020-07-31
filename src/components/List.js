@@ -27,12 +27,15 @@ const List = ({ song, onClick, setSidebar }) => {
       {Object.entries(music).map(([key, { title, composer, movements }]) => (
         <div
           key={key}
-          onClick={() =>
-            onClick(movements ? key + "_" + Object.keys(movements)[0] : key)
-          }
+          onClick={() => {
+            onClick(movements ? key + "_" + Object.keys(movements)[0] : key);
+            setSidebar();
+          }}
           className={
-            "cursor-pointer py-1" +
-            (song.includes(key) ? "" : " opacity-50 hover:opacity-100")
+            "cursor-pointer py-1 px-4 py-1 " +
+            (song.includes(key)
+              ? "border-l-4 border-purple-500 bg-purple-100"
+              : "opacity-50 hover:opacity-100")
           }
         >
           <h2 className="text-sm">{composers[composer].name}</h2>
@@ -47,6 +50,7 @@ const List = ({ song, onClick, setSidebar }) => {
                     onClick={(e) => {
                       e.stopPropagation();
                       onClick(ckey);
+                      setSidebar();
                     }}
                     className={
                       "cursor-pointer py-1 pr-2" +

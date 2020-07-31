@@ -1,42 +1,81 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import composers from "data/composers";
 
 const image = (key) => `${process.env.PUBLIC_URL}/images/composers/${key}.jpg`;
 
 const Details = ({ song }) => {
+  const [step, setStep] = useState(1);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setStep(step === 4 ? 1 : step + 1);
+    }, 5000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [step, setStep]);
+
   const composer = composers[song.composer];
 
   return (
-    <div className="text-center mb-4 relative md:absolute top-0 right-0 md:m-4 opacity-50 hover:opacity-100 w-full md:w-auto">
-      <h1 className="text-lg font-bold">{song.title}</h1>
-      <h2 className="text-base">
-        {song.key} - {song.number}
-      </h2>
-      <p className="text-sm">
-        {song.city}, {song.year}
-      </p>
-      <div className="w-10 h-10 m-auto flex items-center">
-        <img
-          alt={composer.name}
-          src={image(song.composer)}
-          className="max-h-full max-w-full"
-        />
-      </div>
-      <h2 className="text-base font-semibold">{composer.name}</h2>
-      <p className="text-sm">
-        {composer.city}, {composer.year}
-      </p>
-      <p className="text-sm">
-        by{" "}
-        <a
-          className="text-purple-600 font-bold hover:text-purple-700"
-          href={song.midi_url}
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="bg-yellow-100 flex md:w-64 h-16 rounded-lg overflow-hidden mb-4 relative md:absolute bottom-0 left-0 md:m-4 opacity-75 hover:opacity-100 w-full hover:shadow-lg">
+      <div
+        className="w-16 flex-shrink-0 bg-center bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url("${image(song.composer)}")` }}
+      />
+      <div className="relative flex-1 text-left">
+        <div
+          className={
+            "absolute top-0 left-0 m-2 duration-500 ease-in-out transition-opacity " +
+            (step === 1 ? "opacity-100" : "opacity-0")
+          }
         >
-          {song.midi_author}
-        </a>
-      </p>
+          <h1 className="text-base font-bold">{song.title}</h1>
+        </div>
+        <div
+          className={
+            "absolute top-0 left-0 m-2 duration-500 ease-in-out transition-opacity " +
+            (step === 2 ? "opacity-100" : "opacity-0")
+          }
+        >
+          <h2 className="text-sm">
+            {song.key} - {song.number}
+          </h2>
+          <p className="text-sm">
+            {song.city}, {song.year}
+          </p>
+        </div>
+        <div
+          className={
+            "absolute top-0 left-0 m-2 duration-500 ease-in-out transition-opacity " +
+            (step === 3 ? "opacity-100" : "opacity-0")
+          }
+        >
+          <h2 className="text-base font-semibold">{composer.name}</h2>
+          <p className="text-sm">
+            {composer.city}, {composer.year}
+          </p>
+        </div>
+        <div
+          className={
+            "absolute top-0 left-0 m-2 duration-500 ease-in-out transition-opacity " +
+            (step === 4 ? "opacity-100" : "opacity-0")
+          }
+        >
+          <p className="text-sm">
+            MIDI by{" "}
+            <a
+              className="text-purple-600 font-bold hover:text-purple-700"
+              href={song.midi_url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {song.midi_author}
+            </a>
+          </p>{" "}
+        </div>
+      </div>
     </div>
   );
 };

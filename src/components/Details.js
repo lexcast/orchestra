@@ -19,7 +19,7 @@ const Details = ({ song }) => {
   const composer = composers[song.composer];
 
   return (
-    <div className="bg-yellow-100 flex md:w-64 h-16 rounded-lg overflow-hidden mb-4 relative md:absolute bottom-0 left-0 md:m-4 opacity-75 hover:opacity-100 w-full hover:shadow-lg">
+    <div className="bg-yellow-100 flex w-64 h-16 rounded-lg overflow-hidden mb-6 relative md:absolute bottom-0 left-0 md:m-4 opacity-75 hover:opacity-100 hover:shadow-lg">
       <div
         className="w-16 flex-shrink-0 bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: `url("${image(song.composer)}")` }}

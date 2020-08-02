@@ -8,46 +8,31 @@ import {
   faCopyright,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Player = ({
-  player,
-  midiPlayer,
-  audio,
-  setPlayer,
-  setPlaying,
-  delay,
-  setSidebar,
-}) => {
+const playStates = ["PLAYING", "RESUME", "DELAY"];
+
+const Player = ({ player, setPlayer, setSidebar }) => {
   return (
     <div className="flex my-4 items-center justify-center text-lg">
-      {player !== "PLAYING" && (
+      {!playStates.includes(player) && (
         <button
           title="PLAY"
           className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-gray-600"
           onClick={() => {
             if (player === "STOPED") {
-              midiPlayer.current.play();
-              setTimeout(() => {
-                audio.current.play();
-              }, delay);
+              setPlayer("DELAY");
             } else {
-              midiPlayer.current.play();
-              audio.current.play();
+              setPlayer("RESUME");
             }
-            setPlayer("PLAYING");
           }}
         >
           <FontAwesomeIcon icon={faPlay} />
         </button>
       )}
-      {player === "PLAYING" && (
+      {playStates.includes(player) && player !== "DELAY" && (
         <button
           title="PAUSE"
           className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-gray-600"
-          onClick={() => {
-            midiPlayer.current.pause();
-            audio.current.pause();
-            setPlayer("PAUSED");
-          }}
+          onClick={() => setPlayer("PAUSED")}
         >
           <FontAwesomeIcon icon={faPause} />
         </button>
@@ -56,13 +41,7 @@ const Player = ({
         <button
           title="STOP"
           className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-gray-600"
-          onClick={() => {
-            midiPlayer.current.stop();
-            audio.current.pause();
-            audio.current.currentTime = 0;
-            setPlaying({});
-            setPlayer("STOPED");
-          }}
+          onClick={() => setPlayer("STOPED")}
         >
           <FontAwesomeIcon icon={faStop} />
         </button>

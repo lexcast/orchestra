@@ -6,6 +6,7 @@ import Ensemble from "./Ensemble";
 import Details from "./Details";
 import List from "./List";
 import Progress from "./Progress";
+import Delay from "./Delay";
 import IconsAttribution from "./IconsAttribution";
 import GithubButtons from "./GithubButtons";
 import axios from "axios";
@@ -53,10 +54,51 @@ const App = () => {
   const [song, setSong] = useState(DEFAULT_SONG);
   const audio = useRef();
   const midiPlayer = useRef();
+  const delay = useRef();
 
   const handleEnd = useCallback(() => {
     setPlayer("STOPED");
   }, []);
+
+  useEffect(() => {
+    switch (player) {
+      case "LOADING":
+        break;
+      case "STOPED":
+        clearTimeout(delay.current);
+        if (midiPlayer.current) {
+          midiPlayer.current.stop();
+        }
+        if (audio.current) {
+          audio.current.removeEventListener("ended", handleEnd);
+          audio.current.pause();
+          audio.current.currentTime = 0;
+        }
+        setPlaying({});
+        break;
+      case "PLAYING":
+        audio.current.play();
+        break;
+      case "RESUME":
+        midiPlayer.current.play();
+        audio.current.play();
+        break;
+      case "PAUSED":
+        clearTimeout(delay.current);
+        midiPlayer.current.pause();
+        audio.current.pause();
+        break;
+      case "DELAY":
+        midiPlayer.current.play();
+        delay.current = setTimeout(() => {
+          setPlayer("PLAYING");
+        }, music[song].delay);
+        break;
+      default:
+    }
+
+    return () => clearTimeout(delay.current);
+  }, [player, song, handleEnd]);
 
   const play = useCallback(
     async (songId, autoplay) => {
@@ -136,11 +178,7 @@ const App = () => {
         });
       }
       if (autoplay) {
-        midiPlayer.current.play();
-        setTimeout(() => {
-          audio.current.play();
-        }, music[songId].delay);
-        setPlayer("PLAYING");
+        setPlayer("DELAY");
       } else {
         setPlayer("STOPED");
       }
@@ -168,18 +206,9 @@ const App = () => {
       <Ensemble {...{ playing, song: music[song] }} />
       {player !== "LOADING" && (
         <div className="mt-12">
+          {player === "DELAY" && <Delay {...{ song: music[song], player }} />}
           <Progress {...{ audio, song }} />
-          <Player
-            {...{
-              player,
-              midiPlayer,
-              setPlayer,
-              setPlaying,
-              audio,
-              setSidebar,
-            }}
-            delay={music[song].delay}
-          />
+          <Player {...{ player, setPlayer, setSidebar }} />
         </div>
       )}
       <Details song={music[song]} />

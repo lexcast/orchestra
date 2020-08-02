@@ -19,3 +19,12 @@ body,
 .attribution a:hover {
   @apply text-purple-700;
 }
+
+@keyframes delay {
+  0% {
+    @apply w-full;
+  }
+  100% {
+    @apply w-0;
+  }
+}

@@ -206,7 +206,7 @@ const App = () => {
       <Ensemble {...{ playing, song: music[song] }} />
       {player !== "LOADING" && (
         <div className="mt-12">
-          {player === "DELAY" && <Delay {...{ song: music[song], player }} />}
+          <Delay {...{ song: music[song], player }} />
           <Progress {...{ audio, song }} />
           <Player {...{ player, setPlayer, setSidebar }} />
         </div>

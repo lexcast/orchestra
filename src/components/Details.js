@@ -60,7 +60,7 @@ const Details = ({ song }) => {
         <div
           className={
             "absolute top-0 left-0 m-2 duration-500 ease-in-out transition-opacity " +
-            (step === 4 ? "opacity-100" : "opacity-0")
+            (step === 4 ? "opacity-100" : "opacity-0 pointer-events-none")
           }
         >
           <p className="text-sm">

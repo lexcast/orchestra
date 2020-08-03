@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cursive: ["Sacramento", "cursive"],
+        cursive: ["Dancing Script", "cursive"],
       },
     },
   },

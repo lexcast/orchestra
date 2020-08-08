@@ -128,7 +128,13 @@ const App = () => {
       const byGroups = music[songId].groupTracks;
       if (byGroups) {
         Object.entries(byGroups).forEach(([channel, list]) => {
-          list.forEach((n) => (trackingMap[n] = channel));
+          list.forEach((n) => {
+            if (trackingMap[n]) {
+              trackingMap[n].push(channel);
+            } else {
+              trackingMap[n] = [trackingMap[n], channel];
+            }
+          });
         });
       }
 
@@ -154,7 +160,7 @@ const App = () => {
 
         const trackGroup = trackingMap[event.track - 1];
         if (trackGroup) {
-          changes[trackGroup] = on;
+          trackGroup.forEach((t) => (changes[t] = on));
         }
 
         setPlaying((playing) => ({ ...playing, ...changes }));

@@ -1228,6 +1228,42 @@
       }
     }
   },
+  "vivaldi_spring": {
+    "title": "Concerto No.1 La primavera",
+    "key": "E major",
+    "number": "RV 269",
+    "composer": "vivaldi",
+    "year": "1725",
+    "city": "Amsterdam",
+    "ensemble": "orchestra",
+    "midi_author": "Zakaria Boutami",
+    "midi_url": "https://www.classicalarchives.com/contributor/184.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro",
+        "delay": 2000,
+        "bpm": 100,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1|0": "violin_2",
+          "violin_1|1": "violin_3",
+          "violin_1|2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17": 2,
+          "violin_2": 2,
+          "viola": 2,
+          "cello|0,1,2,3,4,5": 4,
+          "cello|6,7,8,9,10": 3,
+          "doublebass": 8,
+          "harpsichord": 5,
+          "director": "d"
+        },
+        "groupTracks": {
+          "violin_2": [2, 6],
+          "violin_3": [2, 7]
+        }
+      }
+    }
+  },
   "williams_starwars_imperial_march": {
     "title": "The Imperial March",
     "number": "Star Wars V",

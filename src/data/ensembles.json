@@ -186,6 +186,7 @@
     "harp": { "positions": [[12, 8]] },
     "piano": { "positions": [[12, 4]] },
     "celesta": { "positions": [[12, 4]] },
+    "harpsichord": { "positions": [[12, 4]] },
     "glockenspiel": { "positions": [[7, 12]] },
     "bells": { "positions": [[7, 11]] },
     "tambourine": { "positions": [[7, 15]] },
@@ -210,6 +211,10 @@
     },
     "piano_solo": {
       "instrument": "piano",
+      "positions": [[33, 24]]
+    },
+    "violin_solo": {
+      "instrument": "violin",
       "positions": [[33, 24]]
     }
   }

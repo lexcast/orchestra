@@ -1261,6 +1261,46 @@
           "violin_2": [2, 6],
           "violin_3": [2, 7]
         }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Largo e pianissimo sempre",
+        "delay": 3200,
+        "bpm": 54,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 2,
+          "violin_2": 2,
+          "viola": 3,
+          "cello": 4,
+          "doublebass": "ex",
+          "harpsichord": "ex",
+          "director": "d"
+        },
+        "groupTracks": {
+          "violin_2": [2, 6],
+          "violin_3": [2, 7]
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Allegro pastorale",
+        "delay": 2000,
+        "bpm": 132,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 2,
+          "violin_2": 2,
+          "viola": 3,
+          "cello": 4,
+          "doublebass": 6,
+          "harpsichord": 5,
+          "director": "d"
+        },
+        "groupTracks": {
+          "violin_2": [2, 6],
+          "violin_3": [2, 7]
+        }
       }
     }
   },

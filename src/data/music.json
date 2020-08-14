@@ -1304,6 +1304,68 @@
       }
     }
   },
+  "vivaldi_summer": {
+    "title": "Concerto No.2 L'estate",
+    "key": "G minor",
+    "number": "RV 315",
+    "composer": "vivaldi",
+    "year": "1725",
+    "city": "Amsterdam",
+    "ensemble": "orchestra",
+    "midi_author": "Zakaria Boutami",
+    "midi_url": "https://www.classicalarchives.com/contributor/184.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro non molto",
+        "delay": 2500,
+        "bpm": 48,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 2,
+          "violin_2": 2,
+          "viola": 3,
+          "cello": 4,
+          "doublebass": 6,
+          "harpsichord": 5,
+          "director": "d"
+        }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Adagio e piano – Presto e forte",
+        "delay": 5800,
+        "bpm": 40,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 3,
+          "violin_2": 3,
+          "viola": 2,
+          "cello": 5,
+          "doublebass": 4,
+          "harpsichord": "ex",
+          "director": "d"
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Presto",
+        "delay": 1100,
+        "bpm": 150,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 2,
+          "violin_2": 2,
+          "viola": 3,
+          "cello|0,1,2,3,4,5": 4,
+          "cello|6,7,8,9,10": 5,
+          "doublebass": 7,
+          "harpsichord": 6,
+          "director": "d"
+        }
+      }
+    }
+  },
   "williams_starwars_imperial_march": {
     "title": "The Imperial March",
     "number": "Star Wars V",

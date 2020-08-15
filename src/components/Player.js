@@ -6,11 +6,12 @@ import {
   faStop,
   faList,
   faCopyright,
+  faPalette,
 } from "@fortawesome/free-solid-svg-icons";
 
 const playStates = ["PLAYING", "RESUME", "DELAY"];
 
-const Player = ({ player, setPlayer, setSidebar }) => {
+const Player = ({ player, setPlayer, setSidebar, colored, setColored }) => {
   return (
     <div className="flex my-4 items-center justify-center text-lg">
       {!playStates.includes(player) && (
@@ -63,6 +64,16 @@ const Player = ({ player, setPlayer, setSidebar }) => {
         className="focus:outline-none appearance-none px-2 m-1 h-8 hover:text-black flex items-center justify-center text-gray-600"
       >
         <FontAwesomeIcon icon={faCopyright} />
+      </button>
+      <button
+        title="COLOR"
+        onClick={() => setColored(!colored)}
+        className={
+          "focus:outline-none appearance-none px-2 m-1 h-8 flex items-center justify-center " +
+          (colored ? "text-gray-600 hover:text-black" : "text-gray-400")
+        }
+      >
+        <FontAwesomeIcon icon={faPalette} />
       </button>
     </div>
   );

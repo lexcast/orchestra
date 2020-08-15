@@ -52,6 +52,7 @@ const App = () => {
   const [playing, setPlaying] = useState({});
   const [player, setPlayer] = useState("LOADING");
   const [song, setSong] = useState(DEFAULT_SONG);
+  const [colored, setColored] = useState(true);
   const audio = useRef();
   const midiPlayer = useRef();
   const delay = useRef();
@@ -141,7 +142,7 @@ const App = () => {
       midiPlayer.current = new MidiPlayer.Player((event) => {
         let on;
         if ((!event.name || event.name === "Note on") && event.velocity > 0) {
-          on = true;
+          on = event.noteNumber;
         } else if (
           event.name === "Note off" ||
           ((!event.name || event.name === "Note on") && event.velocity === 0)
@@ -209,12 +210,12 @@ const App = () => {
   return (
     <div className="py-6 px-10 bg-yellow-100 font-cursive text-center h-screen w-screen overflow-hidden flex justify-start flex-no-wrap items-center flex-col">
       <GithubButtons />
-      <Ensemble {...{ playing, song: music[song] }} />
+      <Ensemble {...{ playing, song: music[song], colored }} />
       {player !== "LOADING" && (
         <div className="mt-12">
           <Delay {...{ song: music[song], player }} />
           <Progress {...{ audio, song }} />
-          <Player {...{ player, setPlayer, setSidebar }} />
+          <Player {...{ player, setPlayer, setSidebar, setColored, colored }} />
         </div>
       )}
       <Details song={music[song]} />

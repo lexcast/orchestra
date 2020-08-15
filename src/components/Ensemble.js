@@ -1,11 +1,12 @@
 import React from "react";
 import instruments from "data/instruments";
 import ensembles from "data/ensembles";
+import colors from "data/colors";
 
 const image = (key) =>
   `${process.env.PUBLIC_URL}/images/instruments/${key}.svg`;
 
-const Ensemble = ({ song, playing }) => {
+const Ensemble = ({ song, playing, colored }) => {
   const ensemble = ensembles[song.ensemble];
 
   return (
@@ -44,8 +45,13 @@ const Ensemble = ({ song, playing }) => {
               >
                 <img
                   style={{
-                    transition: "transform .05s ease",
+                    willChange: "transform, filter",
+                    transition: "transform .02s ease",
                     transform: playing[track] ? "scale(1.2)" : "scale(1)",
+                    filter:
+                      playing[track] && colored
+                        ? `drop-shadow(1px 1px 10px ${colors[playing[track]]})`
+                        : "",
                   }}
                   alt={name}
                   className="max-w-full max-h-full"

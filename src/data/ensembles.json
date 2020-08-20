@@ -112,8 +112,7 @@
         [27, 47],
         [23, 47],
         [19, 47],
-        [15, 47],
-        [27, 43]
+        [15, 47]
       ]
     },
     "piccolo": {
@@ -184,6 +183,7 @@
     },
     "tuba": { "positions": [[10, 46]] },
     "harp": { "positions": [[12, 8]] },
+    "guitar": { "positions": [[16, 8]] },
     "piano": { "positions": [[12, 4]] },
     "celesta": { "positions": [[12, 4]] },
     "harpsichord": { "positions": [[12, 4]] },

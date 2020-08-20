@@ -1366,6 +1366,75 @@
       }
     }
   },
+  "vivaldi_autumn": {
+    "title": "Concerto No.3 L'autunno",
+    "key": "F major",
+    "number": "RV 293",
+    "composer": "vivaldi",
+    "year": "1725",
+    "city": "Amsterdam",
+    "ensemble": "orchestra",
+    "midi_author": "Zakaria Boutami",
+    "midi_url": "https://www.classicalarchives.com/contributor/184.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro",
+        "delay": 2100,
+        "bpm": 110,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 2,
+          "violin_2": 2,
+          "viola": 3,
+          "cello": 4,
+          "doublebass": 6,
+          "harpsichord": 5,
+          "harp": "ex",
+          "guitar": "ex",
+          "director": "d"
+        }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Adagio molto",
+        "delay": 2400,
+        "bpm": 68,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 2,
+          "violin_2": 2,
+          "viola": 3,
+          "cello": 4,
+          "doublebass|0,1,2,3": 6,
+          "doublebass|4,5,6,7": 7,
+          "harpsichord": 5,
+          "harp": 8,
+          "guitar": 9,
+          "director": "d"
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Allegro",
+        "delay": 1100,
+        "bpm": 82,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 2,
+          "violin_2": 2,
+          "viola": 3,
+          "cello|0,1,2,3,4,5": 4,
+          "cello|6,7,8,9,10": 5,
+          "doublebass": 7,
+          "harpsichord": 6,
+          "harp": "ex",
+          "guitar": "ex",
+          "director": "d"
+        }
+      }
+    }
+  },
   "williams_starwars_imperial_march": {
     "title": "The Imperial March",
     "number": "Star Wars V",

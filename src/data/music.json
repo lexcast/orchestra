@@ -1435,6 +1435,72 @@
       }
     }
   },
+  "vivaldi_winter": {
+    "title": "Concerto No.4 L'inverno",
+    "key": "F minor",
+    "number": "RV 297",
+    "composer": "vivaldi",
+    "year": "1725",
+    "city": "Amsterdam",
+    "ensemble": "orchestra",
+    "midi_author": "Zakaria Boutami",
+    "midi_url": "https://www.classicalarchives.com/contributor/184.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro non molto",
+        "delay": 3600,
+        "bpm": 62,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 2,
+          "violin_2": 2,
+          "viola": 3,
+          "cello": 4,
+          "doublebass": 6,
+          "harpsichord": 5,
+          "bassoon": "ex",
+          "director": "d"
+        }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Largo",
+        "delay": 4000,
+        "bpm": 60,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 2,
+          "violin_2": 2,
+          "viola": 3,
+          "cello|0,1,2,3,4,5": 4,
+          "cello|6,7,8,9,10": 5,
+          "doublebass": 6,
+          "harpsichord": "ex",
+          "bassoon": "ex",
+          "director": "d"
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Allegro",
+        "delay": 1100,
+        "bpm": 73,
+        "tracks": {
+          "violin_solo": 1,
+          "violin_1": 2,
+          "violin_2": 2,
+          "viola|0,1,2,3": 3,
+          "viola|4,5,6,7": 4,
+          "cello": 5,
+          "doublebass": "ex",
+          "harpsichord": 6,
+          "bassoon": 7,
+          "director": "d"
+        }
+      }
+    }
+  },
   "williams_starwars_imperial_march": {
     "title": "The Imperial March",
     "number": "Star Wars V",

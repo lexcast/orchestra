@@ -706,6 +706,120 @@
       }
     }
   },
+  "beethoven_symphony_7": {
+    "title": "Symphony No.7",
+    "number": "Opus 92",
+    "key": "A major",
+    "composer": "beethoven",
+    "year": "1813",
+    "city": "Vienna",
+    "ensemble": "orchestra",
+    "midi_author": "Daniel L. Viens",
+    "midi_url": "https://www.classicalarchives.com/contributor/1891.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Poco sostenuto – Vivace",
+        "delay": 0,
+        "bpm": 69,
+        "tracks": {
+          "flute": 5,
+          "oboe": 6,
+          "clarinet": 7,
+          "bassoon": 8,
+          "horn|0,1": 9,
+          "trumpet": 10,
+          "timpani|0": "E",
+          "timpani|1": "A",
+          "violin_1": 12,
+          "violin_2": 13,
+          "viola": 14,
+          "cello": 15,
+          "doublebass": 16,
+          "director": "d"
+        },
+        "trackNotes": {
+          "11": { "A": [45], "E": [52] }
+        }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Allegretto",
+        "delay": 0,
+        "bpm": 76,
+        "tracks": {
+          "flute": 5,
+          "oboe": 6,
+          "clarinet": 7,
+          "bassoon": 8,
+          "horn|0,1": 9,
+          "trumpet": 10,
+          "timpani|0": "E",
+          "timpani|1": "A",
+          "violin_1": 12,
+          "violin_2": 13,
+          "viola": 14,
+          "cello|0,1,2,3,4,5": 15,
+          "cello|6,7,8,9,10": 16,
+          "doublebass": 17,
+          "director": "d"
+        },
+        "trackNotes": {
+          "11": { "A": [45], "E": [52] }
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Presto – Assai meno presto",
+        "delay": 0,
+        "bpm": 198,
+        "tracks": {
+          "flute": 5,
+          "oboe": 6,
+          "clarinet": 7,
+          "bassoon": 8,
+          "horn|0,1": 9,
+          "trumpet": 10,
+          "timpani|0": "F",
+          "timpani|1": "A",
+          "violin_1": 12,
+          "violin_2": 13,
+          "viola": 14,
+          "cello": 15,
+          "doublebass": 16,
+          "director": "d"
+        },
+        "trackNotes": {
+          "11": { "A": [45], "F": [53] }
+        }
+      },
+      "4": {
+        "title": "IV",
+        "subtitle": "Allegro con brio",
+        "delay": 0,
+        "bpm": 144,
+        "tracks": {
+          "flute": 5,
+          "oboe": 6,
+          "clarinet": 7,
+          "bassoon": 8,
+          "horn|0,1": 9,
+          "trumpet": 10,
+          "timpani|0": "E",
+          "timpani|1": "A",
+          "violin_1": 12,
+          "violin_2": 13,
+          "viola": 14,
+          "cello": 15,
+          "doublebass": 16,
+          "director": "d"
+        },
+        "trackNotes": {
+          "11": { "A": [45], "E": [52] }
+        }
+      }
+    }
+  },
   "chopin_grande_polonaise_brillante": {
     "title": "Andante Spianato et Grande Polonaise Brillante",
     "number": "Opus 22",

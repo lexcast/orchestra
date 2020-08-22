@@ -759,8 +759,7 @@
           "violin_1": 12,
           "violin_2": 13,
           "viola": 14,
-          "cello|0,1,2,3,4,5": 15,
-          "cello|6,7,8,9,10": 16,
+          "cello": 16,
           "doublebass": 17,
           "director": "d"
         },

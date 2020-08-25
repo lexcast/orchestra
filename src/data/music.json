@@ -958,9 +958,96 @@
     "midi_author": "Daniel L. Viens",
     "midi_url": "https://www.classicalarchives.com/contributor/1891.html",
     "movements": {
+      "3_a": {
+        "title": "III.a",
+        "subtitle": "Dies Irae",
+        "delay": 0,
+        "bpm": 132,
+        "tracks": {
+          "bassclarinet": 5,
+          "bassoon": 6,
+          "trumpet": 7,
+          "trombone|0": 9,
+          "trombone|1": 10,
+          "trombone|2": 11,
+          "violin_1": 12,
+          "violin_2": 13,
+          "viola": 14,
+          "cello": 15,
+          "doublebass": 16,
+          "choir_alto|0,1,2,3": 17,
+          "choir_alto|4,5,6,7": 18,
+          "choir_bass|0,1,2,3": 19,
+          "choir_bass|4,5,6,7": 20,
+          "timpani|0": "D",
+          "timpani|1": "A",
+          "director": "d"
+        },
+        "trackNotes": {
+          "8": { "A": [45], "D": [50] }
+        }
+      },
+      "3_c": {
+        "title": "III.c",
+        "subtitle": "Rex Tremendae",
+        "delay": 0,
+        "bpm": 42,
+        "tracks": {
+          "bassclarinet": 5,
+          "bassoon": 6,
+          "trumpet": 7,
+          "trombone|0": 8,
+          "trombone|1": 9,
+          "trombone|2": 10,
+          "violin_1": 11,
+          "violin_2": 12,
+          "viola": 13,
+          "cello": 14,
+          "doublebass": 15,
+          "choir_alto|0,1,2,3": 16,
+          "choir_alto|4,5,6,7": 17,
+          "choir_bass|0,1,2,3": 18,
+          "choir_bass|4,5,6,7": 19,
+          "timpani|0": "D",
+          "timpani|1": "A",
+          "director": "d"
+        },
+        "trackNotes": {
+          "20": { "A": [45], "D": [50] }
+        }
+      },
+      "3_e": {
+        "title": "III.e",
+        "subtitle": "Confutatis Maledictis",
+        "delay": 0,
+        "bpm": 72,
+        "tracks": {
+          "bassclarinet": 5,
+          "bassoon": 6,
+          "trumpet": 7,
+          "trombone|0": 8,
+          "trombone|1": 9,
+          "trombone|2": 10,
+          "violin_1": 11,
+          "violin_2": 12,
+          "viola": 13,
+          "cello": 14,
+          "doublebass": 15,
+          "choir_alto|0,1,2,3": 16,
+          "choir_alto|4,5,6,7": 17,
+          "choir_bass|0,1,2,3": 18,
+          "choir_bass|4,5,6,7": 19,
+          "timpani|0": "D",
+          "timpani|1": "A",
+          "director": "d"
+        },
+        "trackNotes": {
+          "20": { "A": [45], "D": [50] }
+        }
+      },
       "3_f": {
         "title": "III.f",
-        "subtitle": "Lacrymosa",
+        "subtitle": "Lacrimosa Dies Illa",
         "delay": 0,
         "bpm": 54,
         "tracks": {

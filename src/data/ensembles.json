@@ -216,6 +216,10 @@
     "violin_solo": {
       "instrument": "violin",
       "positions": [[33, 24]]
-    }
+    },
+    "soprano_solo": { "instrument": "soprano", "positions": [[33, 20]] },
+    "alto_solo": { "instrument": "alto", "positions": [[33, 23]] },
+    "tenor_solo": { "instrument": "tenor", "positions": [[33, 26]] },
+    "bass_solo": { "instrument": "bass", "positions": [[33, 29]] }
   }
 }

@@ -32,5 +32,9 @@
   "cannon": [3, 3],
   "choir_alto": [3, 3],
   "choir_bass": [3, 3],
+  "soprano": [3, 3],
+  "alto": [3, 3],
+  "tenor": [3, 3],
+  "bass": [3, 3],
   "director": [3, 3]
 }

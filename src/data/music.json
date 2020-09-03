@@ -947,6 +947,47 @@
       }
     }
   },
+  "mozart_magic_flute": {
+    "title": "The Magic Flute",
+    "number": "K. 620",
+    "key": "F major",
+    "composer": "mozart",
+    "year": "1791",
+    "city": "Vienna",
+    "ensemble": "orchestra",
+    "midi_author": "Flavio Burrai",
+    "midi_url": "https://www.classicalarchives.com/contributor/228.html",
+    "movements": {
+      "2_c": {
+        "title": "II.c",
+        "subtitle": "Der Hölle Rache kocht in meinem Herzen",
+        "delay": 0,
+        "bpm": 120,
+        "tracks": {
+          "flute": 3,
+          "oboe": 4,
+          "bassoon": 5,
+          "horn|0,1": 6,
+          "trumpet": 7,
+          "timpani|0": "D",
+          "timpani|1": "A",
+          "violin_1": 9,
+          "violin_2": 10,
+          "viola": "viola",
+          "cello": 12,
+          "doublebass": 15,
+          "soprano_solo": 13,
+          "director": "d"
+        },
+        "groupTracks": {
+          "viola": [11, 16, 17]
+        },
+        "trackNotes": {
+          "8": { "A": [45], "D": [50] }
+        }
+      }
+    }
+  },
   "mozart_requiem": {
     "title": "Requiem",
     "number": "K. 626",

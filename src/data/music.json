@@ -819,6 +819,115 @@
       }
     }
   },
+  "beethoven_symphony_8": {
+    "title": "Symphony No.8",
+    "number": "Opus 93",
+    "key": "F major",
+    "composer": "beethoven",
+    "year": "1814",
+    "city": "Vienna",
+    "ensemble": "orchestra",
+    "midi_author": "Daniel L. Viens",
+    "midi_url": "https://www.classicalarchives.com/contributor/1891.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro vivace e con brio",
+        "delay": 0,
+        "bpm": 207,
+        "tracks": {
+          "flute": 5,
+          "oboe": 6,
+          "clarinet": 7,
+          "bassoon": 8,
+          "horn|0,1": 9,
+          "trumpet": 10,
+          "timpani|0": "C",
+          "timpani|1": "F",
+          "violin_1": 12,
+          "violin_2": 13,
+          "viola": 14,
+          "cello": 15,
+          "doublebass": 16,
+          "director": "d"
+        },
+        "trackNotes": {
+          "11": { "F": [41], "C": [48] }
+        }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Allegretto scherzando",
+        "delay": 0,
+        "bpm": 44,
+        "tracks": {
+          "flute": 5,
+          "oboe": 6,
+          "clarinet": 7,
+          "bassoon": 8,
+          "horn|0,1": 9,
+          "trumpet": "ex",
+          "timpani|0,1": "ex",
+          "violin_1": 10,
+          "violin_2": 11,
+          "viola": 12,
+          "cello": 13,
+          "doublebass": 14,
+          "director": "d"
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Tempo di menuetto ",
+        "delay": 0,
+        "bpm": 126,
+        "tracks": {
+          "flute": 5,
+          "oboe": 6,
+          "clarinet": 7,
+          "bassoon": 8,
+          "horn|0,1": 9,
+          "trumpet": 10,
+          "timpani|0": "C",
+          "timpani|1": "F",
+          "violin_1": 12,
+          "violin_2": 13,
+          "viola": 14,
+          "cello": 15,
+          "doublebass": 16,
+          "director": "d"
+        },
+        "trackNotes": {
+          "11": { "F": [41], "C": [48] }
+        }
+      },
+      "4": {
+        "title": "IV",
+        "subtitle": "Allegro vivace",
+        "delay": 200,
+        "bpm": 336,
+        "tracks": {
+          "flute": 5,
+          "oboe": 6,
+          "clarinet": 7,
+          "bassoon": 8,
+          "horn|0,1": 9,
+          "trumpet": 10,
+          "timpani|0": "F2",
+          "timpani|1": "F",
+          "violin_1": 12,
+          "violin_2": 13,
+          "viola": 14,
+          "cello": 15,
+          "doublebass": 16,
+          "director": "d"
+        },
+        "trackNotes": {
+          "11": { "F": [41], "F2": [53] }
+        }
+      }
+    }
+  },
   "chopin_grande_polonaise_brillante": {
     "title": "Andante Spianato et Grande Polonaise Brillante",
     "number": "Opus 22",

@@ -9,6 +9,11 @@
     "city": "Żelazowa Wola",
     "year": "1810"
   },
+  "dvorak": {
+    "name": "Antonín Dvořák",
+    "city": "Nelahozeves",
+    "year": "1841"
+  },
   "mozart": {
     "name": "Wolfgang Amadeus Mozart",
     "city": "Salzburg",

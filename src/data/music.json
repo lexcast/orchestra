@@ -968,6 +968,63 @@
       "violin2": [10, 11]
     }
   },
+  "dvorak_symphony_9": {
+    "title": "Symphony No.9 From the New World",
+    "number": "Opus 95",
+    "key": "E minor",
+    "composer": "dvorak",
+    "year": "1893",
+    "city": "New York",
+    "ensemble": "orchestra",
+    "midi_author": "Jack M. Gilbert",
+    "midi_url": "https://www.classicalarchives.com/contributor/625.html",
+    "movements": {
+      "4": {
+        "title": "IV",
+        "subtitle": "Allegro con fuoco",
+        "delay": 0,
+        "bpm": 151,
+        "tracks": {
+          "flute|0": 3,
+          "flute|1": 4,
+          "oboe|0": 5,
+          "oboe|1": 6,
+          "clarinet|0": 7,
+          "clarinet|1": 8,
+          "bassoon|0": 9,
+          "bassoon|1": 10,
+          "horn|0": "horn_1",
+          "horn|1": 12,
+          "horn|2": 13,
+          "horn|3": 14,
+          "english_horn|0": 16,
+          "trumpet|0": "trumpet_1",
+          "trumpet|1": 18,
+          "trombone|0": 20,
+          "trombone|1": 21,
+          "trombone|2": 22,
+          "timpani|0": "E",
+          "timpani|1": "D",
+          "timpani|2": "B",
+          "timpani|3": "G",
+          "violin_1": 23,
+          "violin_2": 24,
+          "viola": 25,
+          "cello": 27,
+          "doublebass": 29,
+          "cymbals": 31,
+          "director": "d"
+        },
+        "trackNotes": {
+          "30": { "G": [43], "B": [47], "D": [50, 51], "E": [52] }
+        },
+        "groupTracks": {
+          "horn_1": [11, 15],
+          "trumpet_1": [17, 19]
+        }
+      }
+    }
+  },
   "mozart_symphony_25": {
     "title": "Symphony No.25",
     "number": "K. 183/173dB",

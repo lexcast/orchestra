@@ -11,7 +11,6 @@ import IconsAttribution from "./IconsAttribution";
 import GithubButtons from "./GithubButtons";
 import axios from "axios";
 import MidiPlayer from "midi-player-js";
-// import { start, check } from "utils/stopwatch";
 
 const image = (key) => `${process.env.PUBLIC_URL}/images/composers/${key}.jpg`;
 
@@ -151,7 +150,7 @@ const App = () => {
         } else {
           return;
         }
-        // console.log(check());
+
         const changes = { [event.track - 1]: on, d: on };
 
         const trackNote = trackingMap[`${event.track - 1}.${event.noteNumber}`];
@@ -170,7 +169,6 @@ const App = () => {
       midiPlayer.current.loadArrayBuffer(await loadMidi(midi(songId)));
       midiPlayer.current.setTempo(music[songId].bpm);
 
-      // start();
       if ("mediaSession" in navigator) {
         navigator.mediaSession.metadata = new window.MediaMetadata({
           title: music[songId].title,

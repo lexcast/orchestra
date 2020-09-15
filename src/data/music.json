@@ -1484,6 +1484,46 @@
       }
     }
   },
+  "tchaikovsky_violin_concerto": {
+    "title": "Violin Concerto",
+    "key": "D major",
+    "number": "Opus 35",
+    "composer": "tchaikovsky",
+    "year": "1881",
+    "city": "Vienna",
+    "ensemble": "orchestra",
+    "midi_author": "John Knowles",
+    "midi_url": "https://www.classicalarchives.com/contributor/925.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro moderato",
+        "delay": 2000,
+        "bpm": 108,
+        "tracks": {
+          "flute": 1,
+          "oboe": 2,
+          "clarinet": 3,
+          "bassoon": 4,
+          "horn|0,1": 5,
+          "horn|2,3": 6,
+          "trumpet": 7,
+          "timpani|0": "D",
+          "timpani|1": "A",
+          "violin_solo": 9,
+          "violin_1": 10,
+          "violin_2": 11,
+          "viola": 12,
+          "cello": 13,
+          "doublebass": 14,
+          "director": "d"
+        },
+        "trackNotes": {
+          "8": { "A": [45], "D": [50] }
+        }
+      }
+    }
+  },
   "tchaikovsky_1812_overture": {
     "title": "1812 Overture",
     "number": "Opus 49",

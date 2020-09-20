@@ -1,4 +1,9 @@
 {
+  "bach": {
+    "name": "Johann Sebastian Bach",
+    "city": "Eisenach",
+    "year": "1685"
+  },
   "beethoven": {
     "name": "Ludwig van Beethoven",
     "city": "Bonn",

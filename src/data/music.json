@@ -32,6 +32,73 @@
       }
     }
   },
+  "bach_brandenburg_concerto_4": {
+    "title": "Brandenburg Concerto No.4",
+    "number": "BWV 1049",
+    "key": "G major",
+    "composer": "bach",
+    "year": "1721",
+    "city": "Brandenburg",
+    "ensemble": "orchestra",
+    "midi_author": "Daniel L. Viens",
+    "midi_url": "https://www.classicalarchives.com/contributor/1891.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro",
+        "delay": 0,
+        "bpm": 88,
+        "tracks": {
+          "violin_solo": 5,
+          "recorder_solo|0": 6,
+          "recorder_solo|1": 7,
+          "violin_1|0,1": 8,
+          "violin_2|0,1": 9,
+          "viola|0,1,2": 10,
+          "cello|0,1,2": 11,
+          "doublebass|0": 12,
+          "harpsichord": 13,
+          "director": "d"
+        }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Andante",
+        "delay": 0,
+        "bpm": 69,
+        "tracks": {
+          "violin_solo": 5,
+          "recorder_solo|0": 6,
+          "recorder_solo|1": 7,
+          "violin_1|0,1": 8,
+          "violin_2|0,1": 9,
+          "viola|0,1,2": 10,
+          "cello|0,1,2": 11,
+          "doublebass|0": 12,
+          "harpsichord": 13,
+          "director": "d"
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Presto",
+        "delay": 0,
+        "bpm": 210,
+        "tracks": {
+          "violin_solo": 5,
+          "recorder_solo|0": 6,
+          "recorder_solo|1": 7,
+          "violin_1|0,1": 8,
+          "violin_2|0,1": 9,
+          "viola|0,1,2": 10,
+          "cello|0,1,2": 11,
+          "doublebass|0": 12,
+          "harpsichord": 13,
+          "director": "d"
+        }
+      }
+    }
+  },
   "beethoven_symphony_1": {
     "title": "Symphony No.1",
     "number": "Opus 21",

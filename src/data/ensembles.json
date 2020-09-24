@@ -217,6 +217,13 @@
       "instrument": "violin",
       "positions": [[33, 24]]
     },
+    "recorder_solo": {
+      "instrument": "recorder",
+      "positions": [
+        [33, 27],
+        [33, 30]
+      ]
+    },
     "soprano_solo": { "instrument": "soprano", "positions": [[33, 20]] },
     "alto_solo": { "instrument": "alto", "positions": [[33, 23]] },
     "tenor_solo": { "instrument": "tenor", "positions": [[33, 26]] },

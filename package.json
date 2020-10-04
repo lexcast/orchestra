@@ -4,15 +4,15 @@
   "private": true,
   "homepage": "https://lexcast.github.io/orchestra/",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.31",
+    "@fortawesome/free-solid-svg-icons": "^5.15.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
-    "autoprefixer": "^9.8.5",
-    "axios": "^0.19.2",
+    "autoprefixer": "^10.0.1",
+    "axios": "^0.20.0",
     "midi-player-js": "^2.0.13",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,8 +39,8 @@
     ]
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.5.1"
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "postcss-cli": "^8.0.0",
+    "tailwindcss": "^1.8.10"
   }
 }

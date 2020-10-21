@@ -224,6 +224,10 @@
         [33, 30]
       ]
     },
+    "flute_solo": {
+      "instrument": "flute",
+      "positions": [[33, 27]]
+    },
     "soprano_solo": { "instrument": "soprano", "positions": [[33, 20]] },
     "alto_solo": { "instrument": "alto", "positions": [[33, 23]] },
     "tenor_solo": { "instrument": "tenor", "positions": [[33, 26]] },

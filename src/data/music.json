@@ -99,6 +99,70 @@
       }
     }
   },
+  "bach_brandenburg_concerto_5": {
+    "title": "Brandenburg Concerto No.5",
+    "number": "BWV 1050",
+    "key": "D major",
+    "composer": "bach",
+    "year": "1721",
+    "city": "Brandenburg",
+    "ensemble": "orchestra",
+    "midi_author": "Daniel L. Viens",
+    "midi_url": "https://www.classicalarchives.com/contributor/1891.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro",
+        "delay": 0,
+        "bpm": 84,
+        "tracks": {
+          "violin_solo": 6,
+          "flute_solo|0": 5,
+          "violin_1|0,1": 7,
+          "violin_2|0,1": 7,
+          "viola|0,1,2": 8,
+          "cello|0,1,2": 9,
+          "doublebass|0": 10,
+          "harpsichord": 11,
+          "director": "d"
+        }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Affettuoso",
+        "delay": 0,
+        "bpm": 36,
+        "tracks": {
+          "violin_solo": 6,
+          "flute_solo|0": 5,
+          "violin_1|0,1": "ex",
+          "violin_2|0,1": "ex",
+          "viola|0,1,2": "ex",
+          "cello|0,1,2": "ex",
+          "doublebass|0": "ex",
+          "harpsichord": 7,
+          "director": "d"
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Allegro",
+        "delay": 0,
+        "bpm": 120,
+        "tracks": {
+          "violin_solo": 6,
+          "flute_solo|0": 5,
+          "violin_1|0,1": 7,
+          "violin_2|0,1": 7,
+          "viola|0,1,2": 8,
+          "cello|0,1,2": 9,
+          "doublebass|0": 10,
+          "harpsichord": 11,
+          "director": "d"
+        }
+      }
+    }
+  },
   "beethoven_symphony_1": {
     "title": "Symphony No.1",
     "number": "Opus 21",

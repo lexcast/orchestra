@@ -130,6 +130,10 @@
         [16, 34]
       ]
     },
+    "oboe_3": {
+      "instrument": "oboe",
+      "positions": [[16, 37]]
+    },
     "english_horn": {
       "positions": [
         [16, 37],

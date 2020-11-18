@@ -219,18 +219,48 @@
     },
     "violin_solo": {
       "instrument": "violin",
-      "positions": [[33, 24]]
+      "positions": [
+        [33, 21],
+        [33, 24],
+        [33, 27],
+        [33, 30]
+      ]
     },
     "recorder_solo": {
       "instrument": "recorder",
       "positions": [
+        [33, 21],
+        [33, 24],
         [33, 27],
         [33, 30]
       ]
     },
     "flute_solo": {
       "instrument": "flute",
-      "positions": [[33, 27]]
+      "positions": [
+        [33, 21],
+        [33, 24],
+        [33, 27],
+        [33, 30]
+      ]
+    },
+    "oboe_solo": {
+      "instrument": "oboe",
+      "positions": [
+        [33, 21],
+        [33, 24],
+        [33, 27],
+        [33, 30]
+      ]
+    },
+    "trumpet_solo": {
+      "instrument": "trumpet",
+      "positions": [
+        [33, 21],
+        [33, 24],
+        [33, 27],
+        [33, 30]
+      ]
     },
     "soprano_solo": { "instrument": "soprano", "positions": [[33, 20]] },
     "alto_solo": { "instrument": "alto", "positions": [[33, 23]] },

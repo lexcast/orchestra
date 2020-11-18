@@ -22,7 +22,7 @@
           "oboe|1": 8,
           "oboe_3": 9,
           "bassoon": 10,
-          "violin_solo": 11,
+          "violin_solo|1": 11,
           "violin_1|0,1": 12,
           "violin_2|0,1": 13,
           "viola|0,1,2": 14,
@@ -44,7 +44,7 @@
           "oboe|1": 6,
           "oboe_3": 7,
           "bassoon": 8,
-          "violin_solo": 9,
+          "violin_solo|1": 9,
           "violin_1|0,1": 10,
           "violin_2|0,1": 11,
           "viola|0,1,2": 12,
@@ -66,7 +66,7 @@
           "oboe|1": 8,
           "oboe_3": 9,
           "bassoon": 10,
-          "violin_solo": 11,
+          "violin_solo|1": 11,
           "violin_1|0,1": 12,
           "violin_2|0,1": 13,
           "viola|0,1,2": 14,
@@ -88,13 +88,83 @@
           "oboe|1": 8,
           "oboe_3": 9,
           "bassoon": 10,
-          "violin_solo": 11,
+          "violin_solo|1": 11,
           "violin_1|0,1": 12,
           "violin_2|0,1": 13,
           "viola|0,1,2": 14,
           "cello|0,1,2": 15,
           "doublebass|0": 16,
           "harpsichord": 17,
+          "director": "d"
+        }
+      }
+    }
+  },
+  "bach_brandenburg_concerto_2": {
+    "title": "Brandenburg Concerto No.2",
+    "number": "BWV 1047",
+    "key": "F major",
+    "composer": "bach",
+    "year": "1721",
+    "city": "Brandenburg",
+    "ensemble": "orchestra",
+    "midi_author": "Daniel L. Viens",
+    "midi_url": "https://www.classicalarchives.com/contributor/1891.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro",
+        "delay": 1000,
+        "bpm": 88,
+        "tracks": {
+          "trumpet_solo|3": 5,
+          "recorder_solo|2": 6,
+          "oboe_solo|1": 7,
+          "violin_solo|0": 8,
+          "violin_1|0,1": 9,
+          "violin_2|0,1": 10,
+          "viola|0,1,2": 11,
+          "cello|0,1,2": 12,
+          "doublebass|0": 13,
+          "harpsichord": 14,
+          "director": "d"
+        }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Andante",
+        "delay": 0,
+        "bpm": 63,
+        "tracks": {
+          "trumpet_solo|3": "ex",
+          "recorder_solo|2": 5,
+          "oboe_solo|1": 6,
+          "violin_solo|0": 7,
+          "violin_1|0,1": "ex",
+          "violin_2|0,1": "ex",
+          "viola|0,1,2": "ex",
+          "cello|0,1,2": 8,
+          "doublebass|0": "ex",
+          "harpsichord": 9,
+          "director": "d"
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Allegro assai",
+        "delay": 0,
+        "bpm": 96,
+        "tracks": {
+          "trumpet_solo|3": 5,
+          "recorder_solo|2": 6,
+          "oboe_solo|1": 7,
+          "violin_solo|0": 8,
+          "violin_1|0,1": 9,
+          "violin_2|0,1": 10,
+          "viola|0,1,2": 11,
+          "cello|0,1,2": 12,
+          "doublebass|0": 13,
+          "harpsichord": 14,
           "director": "d"
         }
       }
@@ -150,9 +220,9 @@
         "delay": 0,
         "bpm": 88,
         "tracks": {
-          "violin_solo": 5,
-          "recorder_solo|0": 6,
-          "recorder_solo|1": 7,
+          "violin_solo|1": 5,
+          "recorder_solo|2": 6,
+          "recorder_solo|3": 7,
           "violin_1|0,1": 8,
           "violin_2|0,1": 9,
           "viola|0,1,2": 10,
@@ -168,9 +238,9 @@
         "delay": 0,
         "bpm": 69,
         "tracks": {
-          "violin_solo": 5,
-          "recorder_solo|0": 6,
-          "recorder_solo|1": 7,
+          "violin_solo|1": 5,
+          "recorder_solo|2": 6,
+          "recorder_solo|3": 7,
           "violin_1|0,1": 8,
           "violin_2|0,1": 9,
           "viola|0,1,2": 10,
@@ -186,9 +256,9 @@
         "delay": 0,
         "bpm": 210,
         "tracks": {
-          "violin_solo": 5,
-          "recorder_solo|0": 6,
-          "recorder_solo|1": 7,
+          "violin_solo|1": 5,
+          "recorder_solo|2": 6,
+          "recorder_solo|3": 7,
           "violin_1|0,1": 8,
           "violin_2|0,1": 9,
           "viola|0,1,2": 10,
@@ -217,8 +287,8 @@
         "delay": 0,
         "bpm": 84,
         "tracks": {
-          "violin_solo": 6,
-          "flute_solo|0": 5,
+          "violin_solo|1": 6,
+          "flute_solo|2": 5,
           "violin_1|0,1": 7,
           "violin_2|0,1": 7,
           "viola|0,1,2": 8,
@@ -234,8 +304,8 @@
         "delay": 0,
         "bpm": 36,
         "tracks": {
-          "violin_solo": 6,
-          "flute_solo|0": 5,
+          "violin_solo|1": 6,
+          "flute_solo|2": 5,
           "violin_1|0,1": "ex",
           "violin_2|0,1": "ex",
           "viola|0,1,2": "ex",
@@ -251,8 +321,8 @@
         "delay": 0,
         "bpm": 120,
         "tracks": {
-          "violin_solo": 6,
-          "flute_solo|0": 5,
+          "violin_solo|1": 6,
+          "flute_solo|2": 5,
           "violin_1|0,1": 7,
           "violin_2|0,1": 7,
           "viola|0,1,2": 8,
@@ -1740,7 +1810,7 @@
           "director": "d"
         },
         "groupTracks": {
-          "violin_solo": [19, 21],
+          "violin_solo|1": [19, 21],
           "cello_solo": [20, 24]
         },
         "trackNotes": {
@@ -1775,7 +1845,7 @@
           "trumpet": 7,
           "timpani|0": "D",
           "timpani|1": "A",
-          "violin_solo": 9,
+          "violin_solo|1": 9,
           "violin_1": 10,
           "violin_2": 11,
           "viola": 12,
@@ -1982,7 +2052,7 @@
         "delay": 2000,
         "bpm": 100,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1|0": "violin_2",
           "violin_1|1": "violin_3",
           "violin_1|2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17": 2,
@@ -2005,7 +2075,7 @@
         "delay": 3200,
         "bpm": 54,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 2,
           "violin_2": 2,
           "viola": 3,
@@ -2025,7 +2095,7 @@
         "delay": 2000,
         "bpm": 132,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 2,
           "violin_2": 2,
           "viola": 3,
@@ -2058,7 +2128,7 @@
         "delay": 2500,
         "bpm": 48,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 2,
           "violin_2": 2,
           "viola": 3,
@@ -2074,7 +2144,7 @@
         "delay": 5800,
         "bpm": 40,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 3,
           "violin_2": 3,
           "viola": 2,
@@ -2090,7 +2160,7 @@
         "delay": 1100,
         "bpm": 150,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 2,
           "violin_2": 2,
           "viola": 3,
@@ -2120,7 +2190,7 @@
         "delay": 2100,
         "bpm": 110,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 2,
           "violin_2": 2,
           "viola": 3,
@@ -2138,7 +2208,7 @@
         "delay": 2400,
         "bpm": 68,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 2,
           "violin_2": 2,
           "viola": 3,
@@ -2157,7 +2227,7 @@
         "delay": 1100,
         "bpm": 82,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 2,
           "violin_2": 2,
           "viola": 3,
@@ -2189,7 +2259,7 @@
         "delay": 3600,
         "bpm": 62,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 2,
           "violin_2": 2,
           "viola": 3,
@@ -2206,7 +2276,7 @@
         "delay": 4000,
         "bpm": 60,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 2,
           "violin_2": 2,
           "viola": 3,
@@ -2224,7 +2294,7 @@
         "delay": 1100,
         "bpm": 73,
         "tracks": {
-          "violin_solo": 1,
+          "violin_solo|1": 1,
           "violin_1": 2,
           "violin_2": 2,
           "viola|0,1,2,3": 3,

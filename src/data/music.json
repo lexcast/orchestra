@@ -334,6 +334,67 @@
       }
     }
   },
+  "bach_brandenburg_concerto_6": {
+    "title": "Brandenburg Concerto No.6",
+    "number": "BWV 1051",
+    "key": "B-flat major",
+    "composer": "bach",
+    "year": "1721",
+    "city": "Brandenburg",
+    "ensemble": "orchestra",
+    "midi_author": "Daniel L. Viens",
+    "midi_url": "https://www.classicalarchives.com/contributor/1891.html",
+    "movements": {
+      "1": {
+        "title": "I",
+        "subtitle": "Allegro",
+        "delay": 0,
+        "bpm": 88,
+        "tracks": {
+          "viola|0": 5,
+          "viola|1": 6,
+          "cello|0": 9,
+          "cello|1": 7,
+          "cello|2": 8,
+          "doublebass|0": 10,
+          "harpsichord": 11,
+          "director": "d"
+        }
+      },
+      "2": {
+        "title": "II",
+        "subtitle": "Adagio ma non tanto",
+        "delay": 0,
+        "bpm": 54,
+        "tracks": {
+          "viola|0": 5,
+          "viola|1": 6,
+          "cello|0": 7,
+          "cello|1": "ex",
+          "cello|2": "ex",
+          "doublebass|0": 8,
+          "harpsichord": 9,
+          "director": "d"
+        }
+      },
+      "3": {
+        "title": "III",
+        "subtitle": "Allegro",
+        "delay": 0,
+        "bpm": 126,
+        "tracks": {
+          "viola|0": 5,
+          "viola|1": 6,
+          "cello|0": 9,
+          "cello|1": 7,
+          "cello|2": 8,
+          "doublebass|0": 10,
+          "harpsichord": 11,
+          "director": "d"
+        }
+      }
+    }
+  },
   "beethoven_symphony_1": {
     "title": "Symphony No.1",
     "number": "Opus 21",

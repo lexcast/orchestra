@@ -8,7 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "autoprefixer": "^9.8.5",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "midi-player-js": "^2.0.13",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

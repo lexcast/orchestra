@@ -1878,6 +1878,43 @@
       }
     }
   },
+  "rossine_barber_seville_overture": {
+    "title": "The Barber of Seville Overture",
+    "number": "",
+    "key": "G major",
+    "composer": "rossini",
+    "year": "1816",
+    "city": "Rome",
+    "delay": 5000,
+    "bpm": 120,
+    "ensemble": "orchestra",
+    "midi_author": "Tao Wang",
+    "midi_url": "https://www.classicalarchives.com/contributor/1930.html",
+    "tracks": {
+      "piccolo": 5,
+      "flute": 6,
+      "oboe": 7,
+      "clarinet|0": 8,
+      "clarinet|1": 9,
+      "bassoon": 10,
+      "horn|0,1": 11,
+      "trumpet": 12,
+      "trombone|0,1": 13,
+      "trombone|2": 14,
+      "timpani|0": "E",
+      "timpani|1": "B",
+      "bassdrum": 16,
+      "violin_1": 17,
+      "violin_2": 18,
+      "viola": 19,
+      "cello": 20,
+      "doublebass": 21,
+      "director": "d"
+    },
+    "trackNotes": {
+      "15": { "B": [47], "E": [52] }
+    }
+  },
   "tchaikovsky_romeo_juliet_overture": {
     "title": "Romeo and Juliet Fantasy Overture",
     "number": "TH 42",

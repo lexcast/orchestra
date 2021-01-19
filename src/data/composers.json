@@ -24,6 +24,11 @@
     "city": "Salzburg",
     "year": "1756"
   },
+  "rossini": {
+    "name": "Gioachino Rossini",
+    "city": "Pesaro",
+    "year": "1792"
+  },
   "tchaikovsky": {
     "name": "Pyotr Ilyich Tchaikovsky",
     "city": "Vótkinsk",

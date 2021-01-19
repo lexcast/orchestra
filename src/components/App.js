@@ -206,7 +206,7 @@ const App = () => {
   }, [play, handleEnd]);
 
   return (
-    <div className="py-6 px-10 bg-yellow-100 font-cursive text-center h-screen w-screen overflow-hidden flex justify-start flex-no-wrap items-center flex-col">
+    <div className="py-6 px-10 bg-yellow-50 font-cursive text-center h-screen w-screen overflow-hidden flex justify-start flex-nowrap items-center flex-col">
       <GithubButtons />
       <Ensemble {...{ playing, song: music[song], colored }} />
       {player !== "LOADING" && (

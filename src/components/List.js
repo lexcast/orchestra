@@ -22,7 +22,7 @@ const List = ({ song, onClick, setSidebar }) => {
   return (
     <div
       ref={el}
-      className="h-full overflow-y-auto bg-yellow-100 shadow-lg text-left absolute top-0 left-0 w-64"
+      className="h-full overflow-y-auto bg-yellow-50 shadow-lg text-left absolute top-0 left-0 w-64"
     >
       {Object.entries(music).map(([key, { title, composer, movements }]) => (
         <div

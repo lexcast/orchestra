@@ -4,22 +4,23 @@
   "private": true,
   "homepage": "https://lexcast.github.io/orchestra/",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.31",
-    "@fortawesome/free-solid-svg-icons": "^5.15.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "autoprefixer": "^9.8.5",
-    "axios": "^0.20.0",
+    "@craco/craco": "^6.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9",
+    "axios": "^0.21.1",
     "midi-player-js": "^2.0.13",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "postcss": "^7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "start:tw": "./node_modules/.bin/postcss ./src/styles/tailwind.css -o ./src/styles/index.css",
-    "build": "react-scripts build",
-    "build:tw": "./node_modules/.bin/postcss ./src/styles/tailwind.css -o ./src/styles/index.css --env production",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build:tw && yarn build"
   },
@@ -39,8 +40,8 @@
     ]
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0.0",
-    "postcss-cli": "^8.0.0",
-    "tailwindcss": "^1.8.10"
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

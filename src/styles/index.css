@@ -5,7 +5,7 @@
 html,
 body,
 #root {
-  @apply bg-yellow-100 h-screen overflow-hidden;
+  @apply bg-yellow-50 h-screen overflow-hidden;
 }
 
 .attribution div {

@@ -1915,6 +1915,54 @@
       "15": { "B": [47], "E": [52] }
     }
   },
+  "rossini_william_tell_overture": {
+    "title": "William Tell Overture",
+    "number": "",
+    "key": "E major",
+    "composer": "rossini",
+    "year": "1829",
+    "city": "Paris",
+    "delay": 4000,
+    "bpm": 47,
+    "ensemble": "orchestra",
+    "midi_author": "John E. Taylor",
+    "midi_url": "https://www.classicalarchives.com/contributor/1786.html",
+    "tracks": {
+      "piccolo": 1,
+      "flute": 1,
+      "oboe": 2,
+      "clarinet": 3,
+      "bassoon": 4,
+      "horn": 5,
+      "trumpet": 6,
+      "trombone": 7,
+      "timpani|0": "E",
+      "timpani|1": "B",
+      "violin_1": 8,
+      "violin_2": 8,
+      "viola": 9,
+      "cello": 10,
+      "doublebass": "doublebass",
+      "cymbals": "cymbals",
+      "triangle": "triangle",
+      "director": "d"
+    },
+    "groupTracks": {
+      "doublebass": [10, 11]
+    },
+    "trackNotes": {
+      "12": {
+        "timpani_4": [36],
+        "timpani_3": [40],
+        "timpani_2": [43, 44],
+        "timpani_1": [47]
+      },
+      "13": {
+        "cymbals": [57],
+        "triangle": [81]
+      }
+    }
+  },
   "tchaikovsky_romeo_juliet_overture": {
     "title": "Romeo and Juliet Fantasy Overture",
     "number": "TH 42",

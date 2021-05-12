@@ -12,7 +12,7 @@
     "autoprefixer": "^9",
     "axios": "^0.21.1",
     "midi-player-js": "^2.0.13",
-    "postcss": "^7",
+    "postcss": "^8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1"
